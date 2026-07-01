@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, FileText, MapPin, Zap } from "lucide-react";
+import { Github, FileText, MapPin } from "lucide-react";
 import { TypedTagline } from "./TypedTagline";
 import photoAsset from "@/assets/my_photo.jpeg.asset.json";
 
@@ -46,9 +46,7 @@ export function Hero() {
           <span className="inline-flex items-center gap-1.5">
             <MapPin className="size-3.5" /> Philippines
           </span>
-          <span className="inline-flex items-center gap-1.5">
-            <Zap className="size-3.5 text-[color:var(--primary)]" /> PUP · BSECE 2025
-          </span>
+          <span className="inline-flex items-center gap-1.5">PUP · BSECE 2025</span>
           <span>ECE #85 · ECT #80 · PRC March 2026</span>
         </div>
         </div>
@@ -61,10 +59,6 @@ export function Hero() {
               className="h-64 w-56 rounded object-cover lg:h-80 lg:w-64"
               loading="eager"
             />
-            <div className="mt-1.5 flex items-center justify-between px-1 font-mono text-[10px] text-muted-foreground">
-              <span>~/janric.jpg</span>
-              <span className="text-[color:var(--success)]">● live</span>
-            </div>
           </div>
         </div>
       </div>
