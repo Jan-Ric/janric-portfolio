@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Jan Ric Hogat — Electronics & Data Engineer" },
+      { title: "Jan Ric Hogat — Electronics Engineer & Technician" },
       {
         name: "description",
         content:
           "Portfolio of Jan Ric Maranan Hogat — Electronics Engineer transitioning into Data Engineering and Analytics.",
       },
       { name: "author", content: "Jan Ric Maranan Hogat" },
-      { property: "og:title", content: "Jan Ric Hogat — Electronics & Data Engineer" },
+      { property: "og:title", content: "Jan Ric Hogat — Electronics Engineer & Technician" },
       {
         property: "og:description",
         content:
@@ -93,6 +93,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Jan Ric Hogat — Electronics Engineer & Technician" },
+      { name: "description", content: "A personal portfolio website showcasing Jan Ric Maranan Hogat's transition from electronics engineering to data engineering." },
+      { property: "og:description", content: "A personal portfolio website showcasing Jan Ric Maranan Hogat's transition from electronics engineering to data engineering." },
+      { name: "twitter:description", content: "A personal portfolio website showcasing Jan Ric Maranan Hogat's transition from electronics engineering to data engineering." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/cIrRq6KLIUgW9SgjaqVSdRaVgW53/social-images/social-1782908149257-my_photo.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/cIrRq6KLIUgW9SgjaqVSdRaVgW53/social-images/social-1782908149257-my_photo.webp" },
     ],
     links: [
       {
