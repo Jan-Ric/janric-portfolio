@@ -1,6 +1,7 @@
 import { SectionHeading } from "./SectionHeading";
 import { Mail, Github, Linkedin } from "lucide-react";
-import { GitHubCalendar } from "react-github-calendar";
+import { useEffect, useState } from "react";
+import { GitHubCalendar, type Activity } from "react-github-calendar";
 
 function DiscordIcon({ className }: { className?: string }) {
   return (
@@ -78,18 +79,7 @@ export function ContactSection() {
             <p className="font-mono text-xs text-muted-foreground mb-4 self-start">
               GITHUB_ACTIVITY
             </p>
-            <div className="flex w-full items-center justify-center overflow-x-auto">
-              <div className="min-w-[700px] flex justify-center">
-                <GitHubCalendar
-                  username="Jan-Ric"
-                  colorScheme="dark"
-                  theme={{
-                    dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
-                  }}
-                  fontSize={12}
-                />
-              </div>
-            </div>
+            <GitHubActivity />
             <p className="mt-4 text-xs text-muted-foreground self-start font-mono">
               contributions on{" "}
               <a
@@ -105,5 +95,54 @@ export function ContactSection() {
         </div>
       </div>
     </section>
+  );
+}
+
+function GitHubActivity() {
+  const [mounted, setMounted] = useState(false);
+  const [errored, setErrored] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="flex w-full items-center justify-center py-6">
+        <div className="h-[112px] w-full max-w-[700px] animate-pulse rounded bg-muted/40" />
+      </div>
+    );
+  }
+
+  if (errored) {
+    return (
+      <div className="flex w-full items-center justify-center overflow-x-auto">
+        <img
+          src="https://ghchart.rshah.org/39d353/Jan-Ric"
+          alt="Jan-Ric GitHub contributions"
+          className="min-w-[700px] max-w-full"
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex w-full items-center justify-center overflow-x-auto">
+      <div className="min-w-[700px] flex justify-center">
+        <GitHubCalendar
+          username="Jan-Ric"
+          colorScheme="dark"
+          theme={{
+            dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+          }}
+          fontSize={12}
+          errorMessage="Could not load GitHub contributions."
+          transformData={(data: Activity[]) => {
+            if (!data || data.length === 0) setErrored(true);
+            return data;
+          }}
+        />
+      </div>
+    </div>
   );
 }
