@@ -6,7 +6,7 @@ export const featuredProjects = [
     description:
       "End-to-end pipeline analyzing AC output from a utility-scale inverter fleet and predicting daily yield.",
     stack: ["Python", "Pandas", "SQL", "Airflow", "Forecasting"],
-    impact: "Yield prediction pipeline",
+    impact: "Yield prediction pipeline, Revenue Impact Analysis",
   },
   {
     title: "ISO-Based Energy Audit & 10-Year Forecast",
@@ -76,10 +76,10 @@ export const experience = [
   },
   {
     role: "SPES Scholar — Tourism Department",
-    org: "Special Program for Employment of Students",
+    org: "Special Program for Employment of Students - Pililla, Rizal",
     period: "1 month",
     points: [
-      "Mapped potential tourist spots across the locality.",
+      "Participated in mapping the potential tourist spots across the locality.",
       "Classified locations by accessibility, ownership, facilities, and visitor stats in Excel.",
     ],
   },
@@ -90,7 +90,7 @@ export const certifications = {
     { label: "Licensed Electronics Engineer (ECE)", meta: "GPA 85 · PRC Board — March 2026" },
     { label: "Electronics Technician (ECT)", meta: "GPA 80 · PRC Board — March 2026" },
   ],
-  safety: [{ label: "BOSH SO2", meta: "DOLE-accredited · Ref B20426-026" }],
+  safety: [{ label: "BOSH SO2", meta: "DOLE-accredited · Ref B20426-026\n\n" }],
   datacamp: [
     "Data Engineer Associate",
     "Data Literacy",
@@ -105,34 +105,34 @@ export const certifications = {
 export const affiliations = [
   {
     name: "BetterGov.PH",
-    role: "Volunteer contributor",
+    role: "Volunteer member/learner",
     period: "2026 – present",
-    note: "Building a better Philippine national government website.",
+    note: "• Participating in a forum for building a better Philippine national government website.",
   },
   {
     name: "Data Engineering Pilipinas",
     role: "Builder & Scholar",
     period: "2025 – present",
-    note: "Top 50 of 850 applicants.",
+    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\n\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP\n\n',
   },
   {
     name: "Radio Engineering Circle",
-    role: "Competitor",
-    period: "2022 – present",
-    note: "National amateur radio engineering competition.",
+    role: "Student Member",
+    period: "2022 – 2026",
+    note: "• Major Participation: Call sign 4G1GSW aired (QRV) for the 2024 DU3MY Contest on 2-meter FM from the grid location in Sampaloc, Manila.",
   },
   {
     name: "IECEP",
     role: "Official member",
     period: "2021 – present",
-    note: "Institute of Electronics Engineers of the Philippines.",
+    note: "• Institute of Electronics Engineers of the Philippines.",
   },
 ];
 
 export const education = [
   {
     school: "Polytechnic University of the Philippines",
-    degree: "B.S. Electronics Engineering",
+    degree: "B.S. Electronics Engineering (GPA: 1.46)",
     period: "Graduated Sep 2025",
   },
   { school: "Morong National High School", degree: "STEM · With Honors", period: "2019 – 2021" },
