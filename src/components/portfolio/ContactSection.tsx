@@ -79,14 +79,16 @@ export function ContactSection() {
               GITHUB_ACTIVITY
             </p>
             <div className="flex w-full items-center justify-center overflow-x-auto">
-              <GitHubCalendar
-                username="Jan-Ric"
-                colorScheme="dark"
-                theme={{
-                  dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
-                }}
-                fontSize={12}
-              />
+              <div className="min-w-[700px] flex justify-center">
+                <GitHubCalendar
+                  username="Jan-Ric"
+                  colorScheme="dark"
+                  theme={{
+                    dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+                  }}
+                  fontSize={12}
+                />
+              </div>
             </div>
             <p className="mt-4 text-xs text-muted-foreground self-start font-mono">
               contributions on{" "}
