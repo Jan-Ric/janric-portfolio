@@ -30,7 +30,7 @@ export function SiteNav() {
         </nav>
         <div className="flex items-center gap-2">
           <Button asChild size="sm" variant="outline" className="font-mono">
-            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+            <a href="https://docs.google.com/document/d/1_AKf4m8fRLYZylR4gtHdp2rnrf5BxRjc/edit?usp=sharing&ouid=106816187210933978611&rtpof=true&sd=true" target="_blank" rel="noreferrer">
               <FileText className="size-4" /> Resume
             </a>
           </Button>
