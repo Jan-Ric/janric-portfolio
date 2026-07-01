@@ -15,8 +15,7 @@ export function Projects() {
     <section id="projects" className="border-b border-border">
       <div className="mx-auto max-w-6xl px-4 py-20">
         <SectionHeading eyebrow="projects" title="Academic Research & Projects">
-          A mix of production data pipelines, embedded systems, and applied AI — spanning
-          hardware roots and a data engineering future.
+          A mix of production data pipelines, embedded systems, and applied AI during my personal and college years at PUP - spanning hardware roots and a Data and AI engineering future.
         </SectionHeading>
 
         <div className="grid gap-4 md:grid-cols-3">
