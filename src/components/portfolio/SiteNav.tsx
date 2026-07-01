@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, FileText } from "lucide-react";
+import logoAsset from "@/assets/my_logo.png.asset.json";
 
 const links = [
   { href: "#about", label: "about" },
@@ -13,9 +14,13 @@ export function SiteNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-[color:var(--background)]/80 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-        <a href="#top" className="font-mono text-sm font-semibold">
-          <span className="text-[color:var(--primary)]">$</span> janric
-          <span className="text-muted-foreground">.dev</span>
+        <a href="#top" className="flex items-center gap-2 font-mono text-sm font-semibold">
+          <img
+            src={logoAsset.url}
+            alt="Jan Ric logo"
+            className="size-7 rounded-full border border-border object-cover"
+          />
+          janric<span className="text-muted-foreground">.dev</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 font-mono text-sm">
           {links.map((l) => (

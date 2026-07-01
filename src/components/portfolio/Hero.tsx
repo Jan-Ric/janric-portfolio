@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, FileText, MapPin, Zap } from "lucide-react";
 import { TypedTagline } from "./TypedTagline";
+import photoAsset from "@/assets/my_photo.jpeg.asset.json";
 
 export function Hero() {
   return (
@@ -10,7 +11,8 @@ export function Hero() {
         className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-[color:var(--primary)]/60 to-transparent"
         aria-hidden
       />
-      <div className="relative mx-auto max-w-6xl px-4 py-24 md:py-32">
+      <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-24 md:grid-cols-[1fr_auto] md:items-center md:py-32">
+        <div>
         <p className="font-mono text-xs text-muted-foreground">
           <span className="text-[color:var(--success)]">●</span> Available for Data Engineering &
           Analytics roles
@@ -48,6 +50,22 @@ export function Hero() {
             <Zap className="size-3.5 text-[color:var(--primary)]" /> PUP · BSECE 2025
           </span>
           <span>ECE #85 · ECT #80 · PRC March 2026</span>
+        </div>
+        </div>
+        <div className="relative mx-auto hidden md:block">
+          <div className="absolute -inset-1 rounded-lg bg-gradient-to-br from-[color:var(--primary)]/40 to-transparent blur-md" aria-hidden />
+          <div className="relative overflow-hidden rounded-lg border border-border bg-card p-1.5">
+            <img
+              src={photoAsset.url}
+              alt="Jan Ric Maranan Hogat"
+              className="h-64 w-56 rounded object-cover lg:h-80 lg:w-64"
+              loading="eager"
+            />
+            <div className="mt-1.5 flex items-center justify-between px-1 font-mono text-[10px] text-muted-foreground">
+              <span>~/janric.jpg</span>
+              <span className="text-[color:var(--success)]">● live</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
