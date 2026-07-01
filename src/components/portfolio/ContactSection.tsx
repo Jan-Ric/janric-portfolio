@@ -66,7 +66,7 @@ export function ContactSection() {
               rel="noreferrer"
               className="card-hover flex items-center gap-3 rounded-lg border border-border bg-card p-4"
             >
-              <MessageCircle className="size-5 text-[#5865F2]" />
+              <DiscordIcon className="size-5 text-[#5865F2]" />
               <div>
                 <p className="font-mono text-xs text-muted-foreground">DISCORD</p>
                 <p className="text-sm">discordapp.com/users/577119678082580490</p>
