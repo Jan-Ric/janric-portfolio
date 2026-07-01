@@ -54,7 +54,7 @@ export function BentoOverview() {
               <Users className="size-5 text-[color:var(--link)]" />
             </div>
             <p className="mt-3 font-mono text-sm">
-              <span className="text-[color:var(--primary)]">Top 50</span> of 850 applicants
+              <span className="text-[color:var(--primary)]">Top 50</span> of 850 applicants for Open Track Project
             </p>
             <p className="text-xs text-muted-foreground">Scholar & Builder · 2025 – present</p>
           </Tile>
@@ -63,14 +63,19 @@ export function BentoOverview() {
             <Award className="size-5 text-[color:var(--primary)]" />
             <p className="mt-2 font-mono text-xs text-muted-foreground">LICENSE</p>
             <p className="mt-1 text-sm font-semibold">ECE + ECT</p>
-            <p className="text-xs text-muted-foreground">PRC · March 2026</p>
+            <div className="text-xs text-muted-foreground">
+              <p>PRC · March 2026</p>
+              <p className="mt-1 text-[10px] italic">GPA · ECE: 85 | ECT: 80</p>
+            </div>
           </Tile>
 
           <Tile>
             <GraduationCap className="size-5 text-[color:var(--link)]" />
             <p className="mt-2 font-mono text-xs text-muted-foreground">EDUCATION</p>
             <p className="mt-1 text-sm font-semibold">PUP BSECE</p>
-            <p className="text-xs text-muted-foreground">Graduated Sep 2025</p>
+            <p className="text-xs text-muted-foreground whitespace-pre-line">
+              Graduated Sep 2025{"\n"}(GPA: 1.46)
+            </p>
           </Tile>
 
           <Tile>
