@@ -1,46 +1,8 @@
-import { useState } from "react";
-import { z } from "zod";
-import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { SectionHeading } from "./SectionHeading";
-import { supabase } from "@/integrations/supabase/client";
-import { Mail, Github, Linkedin, Send } from "lucide-react";
-
-const schema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(100),
-  email: z.string().trim().email("Invalid email").max(255),
-  message: z.string().trim().min(1, "Message is required").max(2000),
-});
+import { Mail, Github, Linkedin, MessageCircle } from "lucide-react";
+import GitHubCalendar from "react-github-calendar";
 
 export function ContactSection() {
-  const [submitting, setSubmitting] = useState(false);
-
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = new FormData(e.currentTarget);
-    const parsed = schema.safeParse({
-      name: form.get("name"),
-      email: form.get("email"),
-      message: form.get("message"),
-    });
-    if (!parsed.success) {
-      toast.error(parsed.error.issues[0]?.message ?? "Invalid input");
-      return;
-    }
-    setSubmitting(true);
-    const { error } = await supabase.from("contact_messages").insert(parsed.data);
-    setSubmitting(false);
-    if (error) {
-      toast.error("Could not send message. Please try again.");
-      return;
-    }
-    toast.success("Message sent — thank you!");
-    (e.target as HTMLFormElement).reset();
-  }
-
   return (
     <section id="contact" className="border-b border-border">
       <div className="mx-auto max-w-6xl px-4 py-20">
@@ -85,34 +47,46 @@ export function ContactSection() {
                 <p className="text-sm">linkedin.com/in/janrichogat</p>
               </div>
             </a>
+            <a
+              href="https://discordapp.com/users/577119678082580490"
+              target="_blank"
+              rel="noreferrer"
+              className="card-hover flex items-center gap-3 rounded-lg border border-border bg-card p-4"
+            >
+              <MessageCircle className="size-5 text-[#5865F2]" />
+              <div>
+                <p className="font-mono text-xs text-muted-foreground">DISCORD</p>
+                <p className="text-sm">discordapp.com/users/577119678082580490</p>
+              </div>
+            </a>
           </div>
 
-          <form
-            onSubmit={onSubmit}
-            className="rounded-lg border border-border bg-card p-6 space-y-4"
-          >
-            <div className="grid gap-2">
-              <Label htmlFor="name" className="font-mono text-xs">
-                name
-              </Label>
-              <Input id="name" name="name" required maxLength={100} />
+          <div className="rounded-lg border border-border bg-card p-6 flex flex-col items-center justify-center">
+            <p className="font-mono text-xs text-muted-foreground mb-4 self-start">
+              GITHUB_ACTIVITY
+            </p>
+            <div className="flex w-full items-center justify-center overflow-x-auto">
+              <GitHubCalendar
+                username="Jan-Ric"
+                colorScheme="dark"
+                theme={{
+                  dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+                }}
+                fontSize={12}
+              />
             </div>
-            <div className="grid gap-2">
-              <Label htmlFor="email" className="font-mono text-xs">
-                email
-              </Label>
-              <Input id="email" name="email" type="email" required maxLength={255} />
-            </div>
-            <div className="grid gap-2">
-              <Label htmlFor="message" className="font-mono text-xs">
-                message
-              </Label>
-              <Textarea id="message" name="message" required maxLength={2000} rows={5} />
-            </div>
-            <Button type="submit" className="w-full font-mono" disabled={submitting}>
-              <Send className="size-4" /> {submitting ? "Sending..." : "Send message"}
-            </Button>
-          </form>
+            <p className="mt-4 text-xs text-muted-foreground self-start font-mono">
+              contributions on{" "}
+              <a
+                href="https://github.com/Jan-Ric"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[color:var(--link)] hover:underline"
+              >
+                @Jan-Ric
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
