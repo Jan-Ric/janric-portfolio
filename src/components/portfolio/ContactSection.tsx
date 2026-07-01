@@ -1,6 +1,6 @@
 import { SectionHeading } from "./SectionHeading";
 import { Mail, Github, Linkedin, MessageCircle } from "lucide-react";
-import GitHubCalendar from "react-github-calendar";
+import { GitHubCalendar } from "react-github-calendar";
 
 export function ContactSection() {
   return (
