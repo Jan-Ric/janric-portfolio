@@ -1,7 +1,7 @@
 import { SectionHeading } from "./SectionHeading";
 import { Mail, Github, Linkedin } from "lucide-react";
 import { useEffect, useState } from "react";
-import GitHubCalendar from "react-github-calendar";
+import { GitHubCalendar, type Activity } from "react-github-calendar";
 
 function DiscordIcon({ className }: { className?: string }) {
   return (
@@ -137,7 +137,7 @@ function GitHubActivity() {
           }}
           fontSize={12}
           errorMessage="Could not load GitHub contributions."
-          transformData={(data) => {
+          transformData={(data: Activity[]) => {
             if (!data || data.length === 0) setErrored(true);
             return data;
           }}
