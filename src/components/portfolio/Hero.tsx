@@ -30,7 +30,7 @@ export function Hero() {
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg" className="font-mono">
-            <a href="/resume.pdf" target="_blank" rel="noreferrer">
+            <a href="https://docs.google.com/document/d/1_AKf4m8fRLYZylR4gtHdp2rnrf5BxRjc/export?format=pdf" target="_blank" rel="noreferrer">
               <FileText className="size-4" /> Download Resume
             </a>
           </Button>
