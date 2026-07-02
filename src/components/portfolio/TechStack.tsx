@@ -1,5 +1,5 @@
 import { SectionHeading } from "./SectionHeading";
-import { Code2, Database, Wrench } from "lucide-react";
+import { Code2, Database, Wrench, Cpu, Binary, Gauge, Layers, ShieldCheck } from "lucide-react";
 
 const groups = [
   {
@@ -16,6 +16,53 @@ const groups = [
     label: "TOOLS & DEVOPS",
     icon: Wrench,
     items: ["Git", "GitHub", "Docker", "VS Code"],
+  },
+  {
+    label: "ELECTRONICS FIELD",
+    icon: Cpu,
+    items: [
+      "Circuit design & analysis",
+      "THT/SMD soldering & rework",
+      "PCB troubleshooting",
+      "BMS",
+      "RF & Antenna systems",
+      "Power electronics",
+      "Embedded systems (MCU/MPU)",
+    ],
+  },
+  {
+    label: "PROGRAMMING (EE)",
+    icon: Binary,
+    items: [
+      "C/C++ (embedded firmware)",
+      "Python (data processing & automation)",
+      "SQL",
+    ],
+  },
+  {
+    label: "TEST & MEASUREMENT",
+    icon: Gauge,
+    items: [
+      "System validation",
+      "Signal characterization",
+      "Calibration",
+      "Network cabling",
+      "Oscilloscopes",
+    ],
+  },
+  {
+    label: "SOFTWARE & TOOLS (EE)",
+    icon: Layers,
+    items: ["MATLAB", "Multisim", "Microsoft Excel", "GitHub", "VS Code"],
+  },
+  {
+    label: "STANDARDS & SAFETY",
+    icon: ShieldCheck,
+    items: [
+      "Occupational Safety & Health",
+      "Warranty & Service documentation",
+      "ESD-awareness",
+    ],
   },
 ];
 
