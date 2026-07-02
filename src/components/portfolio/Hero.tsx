@@ -44,10 +44,10 @@ export function Hero() {
         </div>
         <div className="mt-10 flex flex-wrap gap-4 font-mono text-xs text-muted-foreground">
           <span className="inline-flex items-center gap-1.5">
-            <MapPin className="size-3.5" /> Philippines
+            <MapPin className="size-3.5" /> Rizal, Philippines
           </span>
           <span className="inline-flex items-center gap-1.5">PUP · BSECE</span>
-          <span>ECE · ECT · BOSH SO₂</span>
+          <span>ECE · ECT · BOSH SO2</span>
         </div>
         </div>
         <div className="relative mx-auto hidden md:block">

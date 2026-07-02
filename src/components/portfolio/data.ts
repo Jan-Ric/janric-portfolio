@@ -36,14 +36,14 @@ export const otherProjects = [
     title: "Automated 6-DOF Robotic Arm Banana Sorting System",
     description: "YOLOv11 + robotic arm classification and sorting.",
     stack: ["YOLOv11", "Robotics", "Computer Vision"],
-    metric: "95% accuracy",
+    metric: "\n",
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
   },
   {
     title: "IoT-Based Automated Medicine Dispenser",
     description: "Adherence-focused IoT dispenser with cloud API backend.",
     stack: ["IoT", "REST API", "Embedded"],
-    metric: "<1s API response",
+    metric: "\n",
     link: "https://github.com/Jan-Ric/IoT-pill-dispenser",
   },
   {
@@ -80,7 +80,7 @@ export const experience = [
   {
     role: "SPES Scholar — Tourism Department",
     org: "Special Program for Employment of Students - Pililla, Rizal",
-    period: "1 month",
+    period: "Aug 2022 (1 month)",
     points: [
       "Participated in mapping the potential tourist spots across the locality.",
       "Classified locations by accessibility, ownership, facilities, and visitor stats in Excel.",
@@ -90,10 +90,10 @@ export const experience = [
 
 export const certifications = {
   prc: [
-    { label: "Licensed Electronics Engineer (ECE)", meta: "GPA 85 · PRC Board" },
-    { label: "Electronics Technician (ECT)", meta: "GPA 80 · PRC Board" },
+    { label: "Licensed Electronics Engineer (ECE)", meta: "GWA 85 · PRC Board" },
+    { label: "Electronics Technician (ECT)", meta: "GWA 80 · PRC Board" },
   ],
-  safety: [{ label: "BOSH SO₂", meta: "DOLE-accredited · Ref B20426-026" }],
+  safety: [{ label: "Basic Occupational Safety and Health for Safety Officer 2", meta: "DOLE-accredited · Ref B20426-026" }],
   datacamp: [
     "Data Engineer Associate",
     "Data Literacy",
@@ -135,7 +135,7 @@ export const affiliations = [
 export const education = [
   {
     school: "Polytechnic University of the Philippines",
-    degree: "B.S. Electronics Engineering (GPA: 1.46)",
+    degree: "B.S. Electronics Engineering (GWA: 1.46)",
     period: "Graduated Sep 2025",
   },
   { school: "Morong National High School", degree: "STEM · With Honors", period: "2019 – 2021" },
