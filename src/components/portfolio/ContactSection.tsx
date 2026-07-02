@@ -116,19 +116,19 @@ function GitHubActivity() {
 
   if (errored) {
     return (
-      <div className="flex w-full items-center justify-center overflow-x-auto">
+      <div className="w-full overflow-x-auto">
         <img
           src="https://ghchart.rshah.org/39d353/Jan-Ric"
           alt="Jan-Ric GitHub contributions"
-          className="min-w-[700px] max-w-full"
+          className="w-full"
         />
       </div>
     );
   }
 
   return (
-    <div className="flex w-full items-center justify-center overflow-x-auto">
-      <div className="min-w-[700px] flex justify-center">
+    <div className="w-full overflow-x-auto">
+      <div className="min-w-full [&_svg]:!h-auto [&_svg]:!w-full">
         <GitHubCalendar
           username="Jan-Ric"
           colorScheme="dark"
@@ -136,6 +136,8 @@ function GitHubActivity() {
             dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
           }}
           fontSize={12}
+          blockSize={11}
+          blockMargin={3}
           errorMessage="Could not load GitHub contributions."
           transformData={(data: Activity[]) => {
             if (!data || data.length === 0) setErrored(true);
