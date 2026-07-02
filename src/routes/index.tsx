@@ -5,6 +5,7 @@ import { BentoOverview } from "@/components/portfolio/BentoOverview";
 import { Experience } from "@/components/portfolio/Experience";
 import { Projects } from "@/components/portfolio/Projects";
 import { Certifications } from "@/components/portfolio/Certifications";
+import { TechStack } from "@/components/portfolio/TechStack";
 import { Affiliations } from "@/components/portfolio/Affiliations";
 import { Education } from "@/components/portfolio/Education";
 import { ContactSection } from "@/components/portfolio/ContactSection";
@@ -44,6 +45,7 @@ function Index() {
         <Experience />
         <Projects />
         <Certifications />
+        <TechStack />
         <Affiliations />
         <Education />
         <ContactSection />

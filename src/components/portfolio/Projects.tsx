@@ -29,7 +29,20 @@ export function Projects() {
                 <span className="font-mono text-[11px] text-muted-foreground">{p.duration}</span>
               </div>
               <p className="mt-3 font-mono text-xs text-[color:var(--primary)]">{p.tag}</p>
-              <h3 className="mt-1 text-lg font-semibold leading-snug">{p.title}</h3>
+              <h3 className="mt-1 text-lg font-semibold leading-snug">
+                {"link" in p && p.link ? (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[color:var(--link)] hover:underline"
+                  >
+                    {p.title}
+                  </a>
+                ) : (
+                  p.title
+                )}
+              </h3>
               <p className="mt-3 flex-1 text-sm text-muted-foreground leading-relaxed">
                 {p.description}
               </p>
@@ -58,7 +71,20 @@ export function Projects() {
               <FolderGit2 className="mt-0.5 size-4 shrink-0 text-[color:var(--link)]" />
               <div className="flex-1">
                 <div className="flex items-baseline justify-between gap-3">
-                  <h4 className="text-sm font-semibold">{p.title}</h4>
+                  <h4 className="text-sm font-semibold">
+                    {"link" in p && p.link ? (
+                      <a
+                        href={p.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hover:text-[color:var(--link)] hover:underline"
+                      >
+                        {p.title}
+                      </a>
+                    ) : (
+                      p.title
+                    )}
+                  </h4>
                   {p.metric ? (
                     <span className="font-mono text-[11px] text-[color:var(--success)] shrink-0">
                       {p.metric}

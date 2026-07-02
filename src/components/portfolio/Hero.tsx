@@ -46,8 +46,8 @@ export function Hero() {
           <span className="inline-flex items-center gap-1.5">
             <MapPin className="size-3.5" /> Philippines
           </span>
-          <span className="inline-flex items-center gap-1.5">PUP · BSECE 2025</span>
-          <span>ECE #85 · ECT #80 · PRC March 2026</span>
+          <span className="inline-flex items-center gap-1.5">PUP · BSECE</span>
+          <span>ECE · ECT · BOSH SO₂</span>
         </div>
         </div>
         <div className="relative mx-auto hidden md:block">

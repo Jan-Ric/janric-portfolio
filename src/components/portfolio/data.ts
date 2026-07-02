@@ -7,59 +7,62 @@ export const featuredProjects = [
       "End-to-end pipeline analyzing AC output from a utility-scale inverter fleet and predicting daily yield.",
     stack: ["Python", "Pandas", "SQL", "Airflow", "Forecasting"],
     impact: "Yield prediction pipeline, Revenue Impact Analysis",
+    link: "https://github.com/Jan-Ric/dep-data-engineering-jan-ric",
   },
   {
-    title: "ISO-Based Energy Audit & 10-Year Forecast",
+    title: "ISO-Based Energy Audit & 10-Year Demand Forecasting for Barangay Lower Bicutan",
     tag: "Data Analytics",
     duration: "Brgy. Lower Bicutan",
     description:
       "ISO-based audit with a decade-long demand forecast. Modeled LED retrofits and phantom-load elimination to cut projected costs.",
     stack: ["Energy Audit", "Forecasting", "Excel", "Python"],
     impact: "Projected energy cost reduction",
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit",
   },
   {
-    title: "AI-Powered UAV Pest Monitoring",
+    title: "Autonomous AI-Powered UAV Pest Monitoring System",
     tag: "Capstone · AI",
     duration: "Autonomous UAV",
     description:
       "Autonomous UAV that estimates pest density with a lightweight vision model, guiding targeted spraying.",
     stack: ["Computer Vision", "UAV", "Edge AI"],
     impact: "25% pesticide reduction",
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/UAV-Pest-Monitoring",
   },
 ];
 
 export const otherProjects = [
   {
-    title: "Automated 6-DOF Robotic Arm Banana Sorting",
+    title: "Automated 6-DOF Robotic Arm Banana Sorting System",
     description: "YOLOv11 + robotic arm classification and sorting.",
     stack: ["YOLOv11", "Robotics", "Computer Vision"],
     metric: "95% accuracy",
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
   },
   {
     title: "IoT-Based Automated Medicine Dispenser",
     description: "Adherence-focused IoT dispenser with cloud API backend.",
     stack: ["IoT", "REST API", "Embedded"],
     metric: "<1s API response",
+    link: "https://github.com/Jan-Ric/IoT-pill-dispenser",
   },
   {
-    title: "Floating Offshore Wind vs Solar PV",
+    title: "Techno-Economic Analysis of Floating Offshore Wind vs. Solar PV Farm",
     description: "Techno-economic analysis comparing FOWT and utility solar.",
     stack: ["Techno-Economic", "Energy"],
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Wind-Solar-Analysis",
   },
   {
-    title: "VHF/UHF Discone Strip Antenna",
+    title: "VHF/UHF Low-Cost Discone Strip Antenna System",
     description: "Low-cost wideband discone antenna system design.",
     stack: ["RF", "Antenna Design"],
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Discone-Antenna",
   },
   {
-    title: "Arduino Water Distillation System",
+    title: "Arduino-Based Water Distillation System",
     description: "Sensor-driven distillation control on Arduino.",
     stack: ["Arduino", "Embedded"],
-  },
-  {
-    title: "AWS Cloud Practitioner Training",
-    description: "Cloud foundations training program.",
-    stack: ["AWS", "Cloud"],
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Water-Distillation",
   },
 ];
 
@@ -87,10 +90,10 @@ export const experience = [
 
 export const certifications = {
   prc: [
-    { label: "Licensed Electronics Engineer (ECE)", meta: "GPA 85 · PRC Board — March 2026" },
-    { label: "Electronics Technician (ECT)", meta: "GPA 80 · PRC Board — March 2026" },
+    { label: "Licensed Electronics Engineer (ECE)", meta: "GPA 85 · PRC Board" },
+    { label: "Electronics Technician (ECT)", meta: "GPA 80 · PRC Board" },
   ],
-  safety: [{ label: "BOSH SO2", meta: "DOLE-accredited · Ref B20426-026\n\n" }],
+  safety: [{ label: "BOSH SO₂", meta: "DOLE-accredited · Ref B20426-026" }],
   datacamp: [
     "Data Engineer Associate",
     "Data Literacy",
