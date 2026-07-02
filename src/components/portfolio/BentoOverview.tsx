@@ -86,15 +86,15 @@ export function BentoOverview() {
           <Tile>
             <Database className="size-5 text-[color:var(--success)]" />
             <p className="mt-2 font-mono text-xs text-muted-foreground">FOCUS</p>
-            <p className="mt-1 text-sm font-semibold">Data Engineering</p>
-            <p className="text-xs text-muted-foreground">SQL · Python · Cloud</p>
+            <p className="mt-1 text-sm font-semibold">Data Engineering & Analytics of Energy systems</p>
+            <p className="text-xs text-muted-foreground">SQL · Python · Cloud · Energy · Engineering</p>
           </Tile>
 
           <Tile>
             <Radio className="size-5 text-[color:var(--primary)]" />
             <p className="mt-2 font-mono text-xs text-muted-foreground">HARDWARE ROOTS</p>
-            <p className="mt-1 text-sm font-semibold">RF · IoT · Robotics</p>
-            <p className="text-xs text-muted-foreground">Antenna, UAV, 6-DOF arm</p>
+            <p className="mt-1 text-sm font-semibold">Instrumentation · RF · IoT · Robotics · Renewable</p>
+            <p className="text-xs text-muted-foreground">Antenna, UAV, 6-DOF arm, Techno-economic</p>
           </Tile>
 
           <Tile className="md:col-span-2 flex items-center justify-between">
