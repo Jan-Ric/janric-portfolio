@@ -64,6 +64,30 @@ export const otherProjects = [
     stack: ["Arduino", "Embedded"],
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Water-Distillation",
   },
+  {
+    title: "Energy Audit — Sun Valley",
+    description: "Community-level energy audit for the Sun Valley area.",
+    stack: ["Energy Audit", "Analysis"],
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit_Sun-Valley",
+  },
+];
+
+export const notSoCalledProjects = [
+  {
+    title: "PLC Simulation",
+    description: "Programmable Logic Controller simulation exercises.",
+    stack: ["PLC", "Automation"],
+  },
+  {
+    title: "ECE Overview of House of Representatives",
+    description: "Electronics engineering overview of the House of Representatives.",
+    stack: ["Research", "Overview"],
+  },
+  {
+    title: "LM555 IC Designing",
+    description: "Timer circuit designs built around the LM555 IC.",
+    stack: ["Analog", "Circuit Design"],
+  },
 ];
 
 export const experience = [
