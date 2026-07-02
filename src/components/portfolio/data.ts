@@ -66,6 +66,24 @@ export const otherProjects = [
   },
 ];
 
+export const notSoCalledProjects = [
+  {
+    title: "PLC Simulation",
+    description: "Programmable Logic Controller simulation exercises.",
+    stack: ["PLC", "Automation"],
+  },
+  {
+    title: "ECE Overview of House of Representatives",
+    description: "Electronics engineering overview of the House of Representatives.",
+    stack: ["Research", "Overview"],
+  },
+  {
+    title: "LM555 IC Designing",
+    description: "Timer circuit designs built around the LM555 IC.",
+    stack: ["Analog", "Circuit Design"],
+  },
+];
+
 export const experience = [
   {
     role: "Technical Support Engineer Intern",
