@@ -64,6 +64,12 @@ export const otherProjects = [
     stack: ["Arduino", "Embedded"],
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Water-Distillation",
   },
+  {
+    title: "Energy Audit — Sun Valley",
+    description: "Community-level energy audit for the Sun Valley area.",
+    stack: ["Energy Audit", "Analysis"],
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit_Sun-Valley",
+  },
 ];
 
 export const notSoCalledProjects = [
