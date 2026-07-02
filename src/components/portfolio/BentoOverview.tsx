@@ -69,8 +69,8 @@ export function BentoOverview() {
             <p className="mt-2 font-mono text-xs text-muted-foreground">LICENSE</p>
             <p className="mt-1 text-sm font-semibold">ECE + ECT</p>
             <div className="text-xs text-muted-foreground">
-              <p>BOSH SO₂</p>
-              <p className="mt-1 text-[10px] italic">GPA · ECE: 85 | ECT: 80</p>
+              <p>BOSH SO2</p>
+              <p className="mt-1 text-[10px] italic">GWA · ECE: 85 | ECT: 80</p>
             </div>
           </Tile>
 
@@ -79,7 +79,7 @@ export function BentoOverview() {
             <p className="mt-2 font-mono text-xs text-muted-foreground">EDUCATION</p>
             <p className="mt-1 text-sm font-semibold">PUP BSECE</p>
             <p className="text-xs text-muted-foreground whitespace-pre-line">
-              Graduated Sep 2025{"\n"}(GPA: 1.46)
+              Graduated Sep 2025{"\n"}(GWA: 1.46)
             </p>
           </Tile>
 
