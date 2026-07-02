@@ -25,9 +25,14 @@ export function BentoOverview() {
           <Tile className="md:col-span-2 md:row-span-2 flex flex-col justify-between">
             <div>
               <p className="font-mono text-xs text-[color:var(--primary)]">CURRENTLY BUILDING</p>
-              <h3 className="mt-2 text-xl font-semibold">
+              <a
+                href="https://github.com/Jan-Ric/dep-data-engineering-jan-ric"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-2 inline-block text-xl font-semibold hover:text-[color:var(--link)] hover:underline"
+              >
                 Solar Inverter Analysis — end-to-end pipeline
-              </h3>
+              </a>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                 Ingesting inverter telemetry, modeling AC output, and forecasting daily yield. A 6-month
                 data engineering project connecting hardware sensor data to a modern DE stack.
@@ -64,7 +69,7 @@ export function BentoOverview() {
             <p className="mt-2 font-mono text-xs text-muted-foreground">LICENSE</p>
             <p className="mt-1 text-sm font-semibold">ECE + ECT</p>
             <div className="text-xs text-muted-foreground">
-              <p>PRC · March 2026</p>
+              <p>BOSH SO₂</p>
               <p className="mt-1 text-[10px] italic">GPA · ECE: 85 | ECT: 80</p>
             </div>
           </Tile>
