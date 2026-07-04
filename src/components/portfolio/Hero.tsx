@@ -27,8 +27,9 @@ export function Hero() {
           Electronics Engineer and Technician transitioning into Data Engineering and Analytics.
           Active builder in the{" "}
           <span className="text-[color:var(--link)]">Data Engineering Pilipinas</span> community,
-          currently shippping a full end-to-end data engineering project on the way to a tech role
-          in data.
+          currently shipping a full end-to-end project. I love digging into data and believe that
+          combining AI, hardware, and cloud infrastructure is the ultimate way to tackle complex
+          datasets and give businesses a real technical edge.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg" className="font-mono">
