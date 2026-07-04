@@ -165,6 +165,21 @@ export const affiliations = [
   },
 ];
 
+export const nonEngineeringAffiliations = [
+  {
+    name: "PUP ECE BDDC",
+    role: "Co-Head Officer & Choreographer (2024–2025), Member (2022–2024)",
+    period: "2022 – 2025",
+    note: "• Co-led the ECE department dance group to prepare for and perform at events inside and outside PUP.",
+  },
+  {
+    name: "4-H Youth Farmers Rizal",
+    role: "Treasurer",
+    period: "2025 – present",
+    note: "• Facilitated financial literacy activities, started a small business for household products, educated youth on financial management, and participated in farm business conferences.",
+  },
+];
+
 export const education = [
   {
     school: "Polytechnic University of the Philippines",
