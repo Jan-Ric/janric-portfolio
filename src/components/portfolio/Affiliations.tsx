@@ -10,7 +10,20 @@ export function Affiliations() {
           {affiliations.map((a) => (
             <div key={a.name} className="card-hover rounded-lg border border-border bg-card p-5">
               <p className="font-mono text-xs text-[color:var(--primary)]">{a.period}</p>
-              <h3 className="mt-2 font-semibold">{a.name}</h3>
+              {a.link ? (
+                <h3 className="mt-2 font-semibold">
+                  <a
+                    href={a.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[color:var(--link)] hover:underline"
+                  >
+                    {a.name}
+                  </a>
+                </h3>
+              ) : (
+                <h3 className="mt-2 font-semibold">{a.name}</h3>
+              )}
               <p className="mt-1 text-xs text-[color:var(--link)]">{a.role}</p>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{a.note}</p>
             </div>
@@ -24,7 +37,20 @@ export function Affiliations() {
           {nonEngineeringAffiliations.map((a) => (
             <div key={a.name} className="card-hover rounded-lg border border-border bg-card p-5">
               <p className="font-mono text-xs text-[color:var(--primary)]">{a.period}</p>
-              <h3 className="mt-2 font-semibold">{a.name}</h3>
+              {a.link ? (
+                <h3 className="mt-2 font-semibold">
+                  <a
+                    href={a.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[color:var(--link)] hover:underline"
+                  >
+                    {a.name}
+                  </a>
+                </h3>
+              ) : (
+                <h3 className="mt-2 font-semibold">{a.name}</h3>
+              )}
               <p className="mt-1 text-xs text-[color:var(--link)]">{a.role}</p>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{a.note}</p>
             </div>
