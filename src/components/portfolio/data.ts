@@ -140,7 +140,7 @@ export const affiliations = [
     name: "Data Engineering Pilipinas",
     role: "Builder & Scholar",
     period: "2025 – present",
-    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
+    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
   },
   {
     name: "Radio Engineering Circle",
