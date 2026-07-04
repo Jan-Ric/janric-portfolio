@@ -77,16 +77,19 @@ export const notSoCalledProjects = [
     title: "Can Filling Machine",
     description: "Programmable Logic Controller ladder diagram simulation",
     stack: ["PLC", "Automation"],
+    link: "https://drive.google.com/file/d/1L5rk3eRU42QofLRlXTSaG073MI29PVV8/view?usp=drive_link",
   },
   {
     title: "ECE Overview of House of Representatives",
     description: "Electronics engineering overview of the House of Representatives.",
     stack: ["Research", "Overview"],
+    link: "https://drive.google.com/file/d/1cEjHEyXFjJcxuVZXzDlT8Dt2d7agBFjU/view?usp=sharing",
   },
   {
     title: "LM555 IC Designing",
     description: "Timer circuit designs built around the LM555 IC.",
     stack: ["Analog", "Circuit Design"],
+    link: "https://drive.google.com/file/d/1om4z1mwbrGpYcatUWMPL6KXcgtzawyrh/view?usp=sharing",
   },
 ];
 
@@ -130,6 +133,12 @@ export const certifications = {
 };
 
 export const affiliations = [
+  {
+    name: "PUP ECESS",
+    role: "Sectorial Chairperson",
+    period: "2024 – 2025",
+    note: "• Led the sector from 1st to 4th year in representing all ECE department activities.",
+  },
   {
     name: "BetterGov.PH",
     role: "Volunteer member/learner",
