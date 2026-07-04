@@ -24,12 +24,12 @@ export function Hero() {
           <TypedTagline />
         </div>
         <p className="mt-6 max-w-2xl text-muted-foreground leading-relaxed">
-          Electronics Engineer and Technician transitioning into Data Engineering and Analytics.
+          Electronics engineer and technician transitioning into data engineering and analytics.
           Active builder in the{" "}
           <span className="text-[color:var(--link)]">Data Engineering Pilipinas</span> community,
           currently shipping a full end-to-end project. I love digging into data and believe that
-          combining AI, hardware, and cloud infrastructure is the ultimate way to tackle complex
-          datasets and give businesses a real technical edge.
+          combining AI, hardware, and cloud infrastructure optimization is the way to tackle complex
+          datasets and give businesses real data-driven decisions.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg" className="font-mono">
