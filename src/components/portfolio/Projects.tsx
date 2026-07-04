@@ -113,7 +113,20 @@ export function Projects() {
             >
               <FolderGit2 className="mt-0.5 size-4 shrink-0 text-[color:var(--link)]" />
               <div className="flex-1">
-                <h4 className="text-sm font-semibold">{p.title}</h4>
+                <h4 className="text-sm font-semibold">
+                  {"link" in p && p.link ? (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:text-[color:var(--link)] hover:underline"
+                    >
+                      {p.title}
+                    </a>
+                  ) : (
+                    p.title
+                  )}
+                </h4>
                 <p className="mt-1 text-xs text-muted-foreground">{p.description}</p>
                 <div className="mt-2 flex flex-wrap gap-1.5">
                   {p.stack.map((s) => (
