@@ -5,7 +5,7 @@ export function Affiliations() {
   return (
     <section id="affiliations" className="border-b border-border">
       <div className="mx-auto max-w-6xl px-4 py-20">
-        <SectionHeading eyebrow="community" title="Affiliations" />
+        <SectionHeading eyebrow="community" title="Affiliations & Leadership" />
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {affiliations.map((a) => (
             <div key={a.name} className="card-hover rounded-lg border border-border bg-card p-5">

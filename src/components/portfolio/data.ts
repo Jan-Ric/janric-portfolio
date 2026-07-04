@@ -74,8 +74,8 @@ export const otherProjects = [
 
 export const notSoCalledProjects = [
   {
-    title: "PLC Simulation",
-    description: "Programmable Logic Controller simulation exercises.",
+    title: "Can Filling Machine",
+    description: "Programmable Logic Controller ladder diagram simulation",
     stack: ["PLC", "Automation"],
   },
   {
