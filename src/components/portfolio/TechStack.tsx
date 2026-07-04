@@ -71,7 +71,7 @@ export function TechStack() {
     <section id="stack" className="border-b border-border">
       <div className="mx-auto max-w-6xl px-4 py-20">
         <SectionHeading eyebrow="stack" title="Tech Stacks & Languages">
-          Tools and languages I use across data engineering, analytics, and hardware-adjacent work.
+          Tools, Skills and languages I use across data engineering, analytics, and hardware-adjacent work.
         </SectionHeading>
 
         <div className="grid gap-4 md:grid-cols-3">
