@@ -27,7 +27,7 @@ export function Hero() {
           Electronics engineer and technician transitioning into data engineering and analytics.
           Active builder in the{" "}
           <a
-            href="https://www.dataengineering.ph/"
+            href="https://dataengineering.ph/"
             target="_blank"
             rel="noreferrer"
             className="text-[color:var(--link)] hover:underline"

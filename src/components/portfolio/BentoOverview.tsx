@@ -54,7 +54,16 @@ export function BentoOverview() {
             <div className="flex items-start justify-between">
               <div>
                 <p className="font-mono text-xs text-muted-foreground">COMMUNITY</p>
-                <p className="mt-1 font-semibold">Data Engineering Pilipinas</p>
+                <p className="mt-1 font-semibold">
+                  <a
+                    href="https://dataengineering.ph/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-[color:var(--link)] hover:underline"
+                  >
+                    Data Engineering Pilipinas
+                  </a>
+                </p>
               </div>
               <Users className="size-5 text-[color:var(--link)]" />
             </div>
