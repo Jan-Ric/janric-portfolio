@@ -26,7 +26,15 @@ export function Hero() {
         <p className="mt-6 max-w-2xl text-muted-foreground leading-relaxed">
           Electronics engineer and technician transitioning into data engineering and analytics.
           Active builder in the{" "}
-          <span className="text-[color:var(--link)]">Data Engineering Pilipinas</span> community,
+          <a
+            href="https://www.dataengineering.ph/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-[color:var(--link)] hover:underline"
+          >
+            Data Engineering Pilipinas
+          </a>{" "}
+          community,
           currently shipping a full end-to-end project. I love digging into data and believe that
           combining AI, hardware, and cloud infrastructure optimization is the way to tackle complex
           datasets and give businesses real data-driven decisions.

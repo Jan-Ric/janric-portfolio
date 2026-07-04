@@ -1,5 +1,5 @@
 import { SectionHeading } from "./SectionHeading";
-import { affiliations } from "./data";
+import { affiliations, nonEngineeringAffiliations } from "./data";
 
 export function Affiliations() {
   return (
@@ -8,6 +8,20 @@ export function Affiliations() {
         <SectionHeading eyebrow="community" title="Affiliations & Leadership" />
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {affiliations.map((a) => (
+            <div key={a.name} className="card-hover rounded-lg border border-border bg-card p-5">
+              <p className="font-mono text-xs text-[color:var(--primary)]">{a.period}</p>
+              <h3 className="mt-2 font-semibold">{a.name}</h3>
+              <p className="mt-1 text-xs text-[color:var(--link)]">{a.role}</p>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{a.note}</p>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="mt-14 mb-4 font-mono text-sm uppercase tracking-widest text-muted-foreground">
+          Non-Engineering Affiliations
+        </h3>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {nonEngineeringAffiliations.map((a) => (
             <div key={a.name} className="card-hover rounded-lg border border-border bg-card p-5">
               <p className="font-mono text-xs text-[color:var(--primary)]">{a.period}</p>
               <h3 className="mt-2 font-semibold">{a.name}</h3>

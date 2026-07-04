@@ -77,16 +77,19 @@ export const notSoCalledProjects = [
     title: "Can Filling Machine",
     description: "Programmable Logic Controller ladder diagram simulation",
     stack: ["PLC", "Automation"],
+    link: "https://drive.google.com/file/d/1L5rk3eRU42QofLRlXTSaG073MI29PVV8/view?usp=drive_link",
   },
   {
     title: "ECE Overview of House of Representatives",
     description: "Electronics engineering overview of the House of Representatives.",
     stack: ["Research", "Overview"],
+    link: "https://drive.google.com/file/d/1cEjHEyXFjJcxuVZXzDlT8Dt2d7agBFjU/view?usp=sharing",
   },
   {
     title: "LM555 IC Designing",
     description: "Timer circuit designs built around the LM555 IC.",
     stack: ["Analog", "Circuit Design"],
+    link: "https://drive.google.com/file/d/1om4z1mwbrGpYcatUWMPL6KXcgtzawyrh/view?usp=sharing",
   },
 ];
 
@@ -131,6 +134,12 @@ export const certifications = {
 
 export const affiliations = [
   {
+    name: "PUP ECESS",
+    role: "Sectorial Chairperson",
+    period: "2024 – 2025",
+    note: "• Led the sector from 1st to 4th year in representing all ECE department activities.",
+  },
+  {
     name: "BetterGov.PH",
     role: "Volunteer member/learner",
     period: "2026 – present",
@@ -153,6 +162,21 @@ export const affiliations = [
     role: "Official member",
     period: "2021 – present",
     note: "• Institute of Electronics Engineers of the Philippines.",
+  },
+];
+
+export const nonEngineeringAffiliations = [
+  {
+    name: "PUP ECE BDDC",
+    role: "Co-Head Officer & Choreographer (2024–2025), Member (2022–2024)",
+    period: "2022 – 2025",
+    note: "• Co-led the ECE department dance group to prepare for and perform at events inside and outside PUP.",
+  },
+  {
+    name: "4-H Youth Farmers Rizal",
+    role: "Treasurer",
+    period: "2025 – present",
+    note: "• Facilitated financial literacy activities, started a small business for household products, educated youth on financial management, and participated in farm business conferences.",
   },
 ];
 
