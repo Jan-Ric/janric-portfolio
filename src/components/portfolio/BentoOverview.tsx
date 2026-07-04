@@ -35,7 +35,7 @@ export function BentoOverview() {
               </a>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                 Ingesting inverter telemetry, modeling AC output, and forecasting daily yield. A 6-month
-                data engineering project connecting hardware sensor data to a modern DE stack.
+                data engineering project connecting hardware sensor data from open data sources to a modern DE stack.
               </p>
             </div>
             <div className="mt-4 flex flex-wrap gap-1.5 font-mono text-[11px]">
