@@ -21,7 +21,7 @@ export function ContactSection() {
     <section id="contact" className="border-b border-border">
       <div className="mx-auto max-w-6xl px-4 py-20">
         <SectionHeading eyebrow="contact" title="Let's build something">
-          Feel free to reach out and DM for collaboration, networking, career, and business opportunities. Can't wait to work, learn, and have fun with you! &lt;3
+          Are you working on a project at the moment? Feel free to reach out and DM for collaboration, networking, career, and business opportunities. Can't wait to work, learn, and have fun with you! &lt;3
         </SectionHeading>
 
         <div className="grid gap-8 md:grid-cols-2">
