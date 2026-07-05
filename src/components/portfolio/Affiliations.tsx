@@ -1,5 +1,11 @@
 import { SectionHeading } from "./SectionHeading";
 import { affiliations, nonEngineeringAffiliations } from "./data";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export function Affiliations() {
   return (
@@ -30,32 +36,38 @@ export function Affiliations() {
           ))}
         </div>
 
-        <h3 className="mt-14 mb-4 font-mono text-sm uppercase tracking-widest text-muted-foreground">
-          Non-Engineering Affiliations
-        </h3>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {nonEngineeringAffiliations.map((a) => (
-            <div key={a.name} className="card-hover rounded-lg border border-border bg-card p-5">
-              <p className="font-mono text-xs text-[color:var(--primary)]">{a.period}</p>
-              {a.link ? (
-                <h3 className="mt-2 font-semibold">
-                  <a
-                    href={a.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-[color:var(--link)] hover:underline"
-                  >
-                    {a.name}
-                  </a>
-                </h3>
-              ) : (
-                <h3 className="mt-2 font-semibold">{a.name}</h3>
-              )}
-              <p className="mt-1 text-xs text-[color:var(--link)]">{a.role}</p>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{a.note}</p>
-            </div>
-          ))}
-        </div>
+        <Accordion type="single" collapsible className="mt-14">
+          <AccordionItem value="non-technical" className="border-none">
+            <AccordionTrigger className="font-mono text-sm uppercase tracking-widest text-muted-foreground hover:no-underline">
+              Non-Technical Affiliations
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                {nonEngineeringAffiliations.map((a) => (
+                  <div key={a.name} className="card-hover rounded-lg border border-border bg-card p-5">
+                    <p className="font-mono text-xs text-[color:var(--primary)]">{a.period}</p>
+                    {a.link ? (
+                      <h3 className="mt-2 font-semibold">
+                        <a
+                          href={a.link}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="hover:text-[color:var(--link)] hover:underline"
+                        >
+                          {a.name}
+                        </a>
+                      </h3>
+                    ) : (
+                      <h3 className="mt-2 font-semibold">{a.name}</h3>
+                    )}
+                    <p className="mt-1 text-xs text-[color:var(--link)]">{a.role}</p>
+                    <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{a.note}</p>
+                  </div>
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
   );
