@@ -1,13 +1,13 @@
 export const featuredProjects = [
   {
-    title: "Solar Power Plant Inverter Analysis",
-    tag: "Data Engineering",
-    duration: "6 months",
+    title: "Autonomous AI-Powered UAV Pest Monitoring System",
+    tag: "Capstone · AI",
+    duration: "Autonomous UAV",
     description:
-      "End-to-end pipeline analyzing AC output from a utility-scale inverter fleet and predicting daily yield.",
-    stack: ["Python", "Pandas", "SQL", "Airflow", "Forecasting"],
-    impact: "Yield prediction pipeline, Revenue Impact Analysis",
-    link: "https://github.com/Jan-Ric/dep-data-engineering-jan-ric",
+      "Autonomous UAV that estimates pest density with a lightweight vision model, guiding targeted spraying.",
+    stack: ["Computer Vision", "UAV", "Edge AI"],
+    impact: "Proactive Targeted Intervention, Efficient usage of pesticide",
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/UAV-Pest-Monitoring",
   },
   {
     title: "ISO-Based Energy Audit & 10-Year Demand Forecasting for Barangay Lower Bicutan",
@@ -20,14 +20,13 @@ export const featuredProjects = [
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit",
   },
   {
-    title: "Autonomous AI-Powered UAV Pest Monitoring System",
-    tag: "Capstone · AI",
-    duration: "Autonomous UAV",
-    description:
-      "Autonomous UAV that estimates pest density with a lightweight vision model, guiding targeted spraying.",
-    stack: ["Computer Vision", "UAV", "Edge AI"],
-    impact: "25% pesticide reduction",
-    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/UAV-Pest-Monitoring",
+    title: "Automated Robotic Banana Sorting System",
+    tag: "Robotics · AI",
+    duration: "6-DOF Arm",
+    description: "YOLOv11 + robotic arm classification and sorting of banana quality.",
+    stack: ["YOLOv11", "Robotics", "Computer Vision"],
+    impact: "Automated quality classification",
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
   },
 ];
 
