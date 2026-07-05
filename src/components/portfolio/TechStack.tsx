@@ -1,7 +1,13 @@
 import { SectionHeading } from "./SectionHeading";
 import { Code2, Database, Wrench, Cpu, Binary, Gauge, Layers, ShieldCheck } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-const groups = [
+const generalGroups = [
   {
     label: "LANGUAGES & DATABASES",
     icon: Database,
@@ -17,6 +23,9 @@ const groups = [
     icon: Wrench,
     items: ["Git", "GitHub", "Docker", "VS Code"],
   },
+];
+
+const electronicsGroups = [
   {
     label: "ELECTRONICS FIELD",
     icon: Cpu,
@@ -66,6 +75,35 @@ const groups = [
   },
 ];
 
+function GroupCard({
+  label,
+  icon: Icon,
+  items,
+}: {
+  label: string;
+  icon: typeof Cpu;
+  items: string[];
+}) {
+  return (
+    <div className="card-hover rounded-lg border border-border bg-card p-5">
+      <div className="flex items-center gap-2">
+        <Icon className="size-4 text-[color:var(--primary)]" />
+        <p className="font-mono text-xs text-[color:var(--primary)]">{label}</p>
+      </div>
+      <div className="mt-4 flex flex-wrap gap-1.5">
+        {items.map((it) => (
+          <span
+            key={it}
+            className="rounded-md border border-border bg-secondary/40 px-2 py-1 font-mono text-[11px]"
+          >
+            {it}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function TechStack() {
   return (
     <section id="stack" className="border-b border-border">
@@ -75,28 +113,25 @@ export function TechStack() {
         </SectionHeading>
 
         <div className="grid gap-4 md:grid-cols-3">
-          {groups.map(({ label, icon: Icon, items }) => (
-            <div
-              key={label}
-              className="card-hover rounded-lg border border-border bg-card p-5"
-            >
-              <div className="flex items-center gap-2">
-                <Icon className="size-4 text-[color:var(--primary)]" />
-                <p className="font-mono text-xs text-[color:var(--primary)]">{label}</p>
-              </div>
-              <div className="mt-4 flex flex-wrap gap-1.5">
-                {items.map((it) => (
-                  <span
-                    key={it}
-                    className="rounded-md border border-border bg-secondary/40 px-2 py-1 font-mono text-[11px]"
-                  >
-                    {it}
-                  </span>
-                ))}
-              </div>
-            </div>
+          {generalGroups.map((g) => (
+            <GroupCard key={g.label} {...g} />
           ))}
         </div>
+
+        <Accordion type="single" collapsible className="mt-10">
+          <AccordionItem value="pure-electronics" className="border-none">
+            <AccordionTrigger className="font-mono text-sm uppercase tracking-widest text-muted-foreground hover:no-underline">
+              Pure Electronics Skills
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="grid gap-4 md:grid-cols-3">
+                {electronicsGroups.map((g) => (
+                  <GroupCard key={g.label} {...g} />
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
   );
