@@ -1,13 +1,13 @@
 export const featuredProjects = [
   {
-    title: "Solar Power Plant Inverter Analysis",
-    tag: "Data Engineering",
-    duration: "6 months",
+    title: "Autonomous AI-Powered UAV Pest Monitoring System",
+    tag: "Capstone · AI",
+    duration: "Autonomous UAV",
     description:
-      "End-to-end pipeline analyzing AC output from a utility-scale inverter fleet and predicting daily yield.",
-    stack: ["Python", "Pandas", "SQL", "Airflow", "Forecasting"],
-    impact: "Yield prediction pipeline, Revenue Impact Analysis",
-    link: "https://github.com/Jan-Ric/dep-data-engineering-jan-ric",
+      "Autonomous UAV that estimates pest density with a lightweight vision model, guiding targeted spraying.",
+    stack: ["Computer Vision", "UAV", "Edge AI"],
+    impact: "Proactive Targeted Intervention, Efficient usage of pesticide",
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/UAV-Pest-Monitoring",
   },
   {
     title: "ISO-Based Energy Audit & 10-Year Demand Forecasting for Barangay Lower Bicutan",
@@ -20,24 +20,23 @@ export const featuredProjects = [
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit",
   },
   {
-    title: "Autonomous AI-Powered UAV Pest Monitoring System",
-    tag: "Capstone · AI",
-    duration: "Autonomous UAV",
-    description:
-      "Autonomous UAV that estimates pest density with a lightweight vision model, guiding targeted spraying.",
-    stack: ["Computer Vision", "UAV", "Edge AI"],
-    impact: "25% pesticide reduction",
-    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/UAV-Pest-Monitoring",
+    title: "Automated Robotic Banana Sorting System",
+    tag: "Robotics · AI",
+    duration: "6-DOF Arm",
+    description: "YOLOv11 + robotic arm classification and sorting of banana quality.",
+    stack: ["YOLOv11", "Robotics", "Computer Vision"],
+    impact: "Automated quality classification",
+    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
   },
 ];
 
 export const otherProjects = [
   {
-    title: "Automated 6-DOF Robotic Arm Banana Sorting System",
-    description: "YOLOv11 + robotic arm classification and sorting.",
-    stack: ["YOLOv11", "Robotics", "Computer Vision"],
-    metric: "\n",
-    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
+    title: "Solar Power Plant Inverter Analysis",
+    description:
+      "End-to-end pipeline analyzing AC output from a utility-scale inverter fleet and predicting daily yield.",
+    stack: ["Python", "Pandas", "SQL", "Airflow", "Forecasting"],
+    link: "https://github.com/Jan-Ric/dep-data-engineering-jan-ric",
   },
   {
     title: "IoT-Based Automated Medicine Dispenser",
@@ -141,25 +140,11 @@ export const certifications = {
 
 export const affiliations = [
   {
-    name: "PUP ECESS",
-    role: "Sectorial Chairperson",
-    period: "2024 – 2025",
-    note: "• Led the sector from 1st to 4th year in representing all ECE department activities.",
-    link: "https://www.facebook.com/pup.ecess1979",
-  },
-  {
-    name: "BetterGov.PH",
-    role: "Volunteer member/learner",
-    period: "2026 – present",
-    note: "• Participating in a forum for building a better Philippine national government website.",
-    link: "https://bettergov.ph/",
-  },
-  {
-    name: "Data Engineering Pilipinas",
-    role: "Builder & Scholar",
-    period: "2025 – present",
-    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
-    link: "https://dataengineering.ph/",
+    name: "IECEP",
+    role: "Official member",
+    period: "2021 – present",
+    note: "• Institute of Electronics Engineers of the Philippines.",
+    link: "https://myiecep.net/",
   },
   {
     name: "Radio Engineering Circle",
@@ -169,11 +154,25 @@ export const affiliations = [
     link: "https://beta.rec.org.ph/",
   },
   {
-    name: "IECEP",
-    role: "Official member",
-    period: "2021 – present",
-    note: "• Institute of Electronics Engineers of the Philippines.",
-    link: "https://myiecep.net/",
+    name: "PUP ECESS",
+    role: "Sectorial Chairperson",
+    period: "2024 – 2025",
+    note: "• Led the sector from 1st to 4th year in representing all ECE department activities.",
+    link: "https://www.facebook.com/pup.ecess1979",
+  },
+  {
+    name: "Data Engineering Pilipinas",
+    role: "Builder & Scholar",
+    period: "2025 – present",
+    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
+    link: "https://dataengineering.ph/",
+  },
+  {
+    name: "BetterGov.PH",
+    role: "Volunteer member/learner",
+    period: "2026 – present",
+    note: "• Participating in a forum for building a better Philippine national government website.",
+    link: "https://bettergov.ph/",
   },
 ];
 
