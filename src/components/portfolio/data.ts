@@ -140,25 +140,11 @@ export const certifications = {
 
 export const affiliations = [
   {
-    name: "PUP ECESS",
-    role: "Sectorial Chairperson",
-    period: "2024 – 2025",
-    note: "• Led the sector from 1st to 4th year in representing all ECE department activities.",
-    link: "https://www.facebook.com/pup.ecess1979",
-  },
-  {
-    name: "BetterGov.PH",
-    role: "Volunteer member/learner",
-    period: "2026 – present",
-    note: "• Participating in a forum for building a better Philippine national government website.",
-    link: "https://bettergov.ph/",
-  },
-  {
-    name: "Data Engineering Pilipinas",
-    role: "Builder & Scholar",
-    period: "2025 – present",
-    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
-    link: "https://dataengineering.ph/",
+    name: "IECEP",
+    role: "Official member",
+    period: "2021 – present",
+    note: "• Institute of Electronics Engineers of the Philippines.",
+    link: "https://myiecep.net/",
   },
   {
     name: "Radio Engineering Circle",
@@ -168,11 +154,25 @@ export const affiliations = [
     link: "https://beta.rec.org.ph/",
   },
   {
-    name: "IECEP",
-    role: "Official member",
-    period: "2021 – present",
-    note: "• Institute of Electronics Engineers of the Philippines.",
-    link: "https://myiecep.net/",
+    name: "PUP ECESS",
+    role: "Sectorial Chairperson",
+    period: "2024 – 2025",
+    note: "• Led the sector from 1st to 4th year in representing all ECE department activities.",
+    link: "https://www.facebook.com/pup.ecess1979",
+  },
+  {
+    name: "Data Engineering Pilipinas",
+    role: "Builder & Scholar",
+    period: "2025 – present",
+    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
+    link: "https://dataengineering.ph/",
+  },
+  {
+    name: "BetterGov.PH",
+    role: "Volunteer member/learner",
+    period: "2026 – present",
+    note: "• Participating in a forum for building a better Philippine national government website.",
+    link: "https://bettergov.ph/",
   },
 ];
 
