@@ -1,6 +1,12 @@
 import { SectionHeading } from "./SectionHeading";
 import { featuredProjects, otherProjects, notSoCalledProjects } from "./data";
 import { Star, FolderGit2 } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 function Chip({ children }: { children: React.ReactNode }) {
   return (
@@ -102,41 +108,47 @@ export function Projects() {
           ))}
         </div>
 
-        <h3 className="mt-14 mb-4 font-mono text-sm uppercase tracking-widest text-muted-foreground">
-          Not-so-called Projects
-        </h3>
-        <div className="grid gap-3 md:grid-cols-2">
-          {notSoCalledProjects.map((p) => (
-            <div
-              key={p.title}
-              className="card-hover rounded-lg border border-border bg-card p-4 flex items-start gap-3"
-            >
-              <FolderGit2 className="mt-0.5 size-4 shrink-0 text-[color:var(--link)]" />
-              <div className="flex-1">
-                <h4 className="text-sm font-semibold">
-                  {"link" in p && p.link ? (
-                    <a
-                      href={p.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hover:text-[color:var(--link)] hover:underline"
-                    >
-                      {p.title}
-                    </a>
-                  ) : (
-                    p.title
-                  )}
-                </h4>
-                <p className="mt-1 text-xs text-muted-foreground">{p.description}</p>
-                <div className="mt-2 flex flex-wrap gap-1.5">
-                  {p.stack.map((s) => (
-                    <Chip key={s}>{s}</Chip>
-                  ))}
-                </div>
+        <Accordion type="single" collapsible className="mt-14">
+          <AccordionItem value="so-called" className="border-none">
+            <AccordionTrigger className="font-mono text-sm uppercase tracking-widest text-muted-foreground hover:no-underline">
+              So-Called Projects
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="grid gap-3 md:grid-cols-2">
+                {notSoCalledProjects.map((p) => (
+                  <div
+                    key={p.title}
+                    className="card-hover rounded-lg border border-border bg-card p-4 flex items-start gap-3"
+                  >
+                    <FolderGit2 className="mt-0.5 size-4 shrink-0 text-[color:var(--link)]" />
+                    <div className="flex-1">
+                      <h4 className="text-sm font-semibold">
+                        {"link" in p && p.link ? (
+                          <a
+                            href={p.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:text-[color:var(--link)] hover:underline"
+                          >
+                            {p.title}
+                          </a>
+                        ) : (
+                          p.title
+                        )}
+                      </h4>
+                      <p className="mt-1 text-xs text-muted-foreground">{p.description}</p>
+                      <div className="mt-2 flex flex-wrap gap-1.5">
+                        {p.stack.map((s) => (
+                          <Chip key={s}>{s}</Chip>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </div>
-          ))}
-        </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </section>
   );
