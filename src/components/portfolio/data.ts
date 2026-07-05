@@ -32,11 +32,11 @@ export const featuredProjects = [
 
 export const otherProjects = [
   {
-    title: "Automated 6-DOF Robotic Arm Banana Sorting System",
-    description: "YOLOv11 + robotic arm classification and sorting.",
-    stack: ["YOLOv11", "Robotics", "Computer Vision"],
-    metric: "\n",
-    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
+    title: "Solar Power Plant Inverter Analysis",
+    description:
+      "End-to-end pipeline analyzing AC output from a utility-scale inverter fleet and predicting daily yield.",
+    stack: ["Python", "Pandas", "SQL", "Airflow", "Forecasting"],
+    link: "https://github.com/Jan-Ric/dep-data-engineering-jan-ric",
   },
   {
     title: "IoT-Based Automated Medicine Dispenser",
