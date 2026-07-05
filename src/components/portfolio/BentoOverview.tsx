@@ -34,8 +34,7 @@ export function BentoOverview() {
                 Solar Inverter Analysis — end-to-end pipeline
               </a>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-                Ingesting inverter telemetry, modeling AC output, and forecasting daily yield. A 6-month
-                data engineering project connecting hardware sensor data from open data sources to a modern DE stack.
+                Forecasts solar energy yield from inverter telemetry using a modern data engineering stack to optimize revenue and operations.
               </p>
             </div>
             <div className="mt-4 flex flex-wrap gap-1.5 font-mono text-[11px]">
