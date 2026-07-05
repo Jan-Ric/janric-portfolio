@@ -70,6 +70,13 @@ export const otherProjects = [
     stack: ["Energy Audit", "Analysis"],
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit_Sun-Valley",
   },
+  {
+    title: "Critical Review of QR Code Utilization Study",
+    description:
+      "Conducted a critical methodological review of an undergraduate QR code utilization study, identifying statistical inconsistencies, invalid hypothesis testing, sampling issues, and reliability concerns while recognizing its descriptive contributions.",
+    stack: ["Research Review"],
+    link: "https://github.com/Jan-Ric/Research-and-Projects/tree/main/QR-Code-Research-Review",
+  },
 ];
 
 export const notSoCalledProjects = [
@@ -176,10 +183,10 @@ export const nonEngineeringAffiliations = [
     role: "Co-Head Officer & Choreographer (2024–2025), Member (2022–2024)",
     period: "2022 – 2025",
     note: "• Co-led the ECE department dance group to prepare for and perform at events inside and outside PUP.",
-    link: "https://www.facebook.com/search/top?q=blue%20dragon%20dance%20company",
+    link: "https://www.facebook.com/BDDCompany",
   },
   {
-    name: "4-H Youth Farmers Rizal",
+    name: "4-H Youth Club Pililla",
     role: "Treasurer",
     period: "2025 – present",
     note: "• Facilitated financial literacy activities, started a small business for household products, educated youth on financial management, and participated in farm business conferences.",
