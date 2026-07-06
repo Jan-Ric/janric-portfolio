@@ -1,5 +1,4 @@
-import { Users, Database, Radio, GraduationCap, Award, ArrowUpRight } from "lucide-react";
-import { GitHubActivity } from "./GitHubActivity";
+import { Github, Users, Database, Radio, GraduationCap, Award } from "lucide-react";
 
 function Tile({
   children,
@@ -32,11 +31,8 @@ export function BentoOverview() {
                 rel="noreferrer"
                 className="mt-2 inline-block text-xl font-semibold hover:text-[color:var(--link)] hover:underline"
               >
-                DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey
+                Solar Inverter Analysis — end-to-end pipeline
               </a>
-              <p className="mt-2 text-sm font-semibold text-foreground/90">
-                Solar Power Plant Inverter Analysis: A 12-Month AC Output Quantification of Inverters with a Negative Gap Between Actual and Predictive Yield
-              </p>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                 Forecasts solar energy yield from inverter telemetry using a modern data engineering stack to optimize revenue and operations.
               </p>
@@ -109,43 +105,22 @@ export function BentoOverview() {
             <p className="text-xs text-muted-foreground">Antenna, UAV, 6-DOF arm, Techno-economic</p>
           </Tile>
 
-          <a
-            href="#contact"
-            className="md:col-span-2 group card-hover rounded-lg border border-[color:var(--primary)]/40 bg-gradient-to-br from-[color:var(--primary)]/10 via-card to-card p-5 flex items-center justify-between hover:border-[color:var(--primary)]"
-          >
+          <Tile className="md:col-span-2 flex items-center justify-between">
             <div>
-              <p className="font-mono text-xs text-[color:var(--primary)]">GET IN TOUCH</p>
-              <p className="mt-1 font-semibold tracking-wide">CONNECT WITH JAN-RIC</p>
-              <p className="mt-1 text-xs text-muted-foreground max-w-sm">
-                <span className="text-foreground/90 font-medium">Recruiters, collaborators, and community members:</span>{" "}
-                A clear path for community projects, volunteering, and direct hire.
-              </p>
+              <p className="font-mono text-xs text-muted-foreground">FIND ME ON</p>
+              <p className="mt-1 font-semibold">github.com/Jan-Ric</p>
+              <p className="text-xs text-muted-foreground">Open to collaboration</p>
             </div>
-            <span
-              className="rounded-md border border-[color:var(--primary)]/50 p-3 text-[color:var(--primary)] group-hover:bg-[color:var(--primary)]/10 transition-colors"
-              aria-hidden="true"
-            >
-              <ArrowUpRight className="size-5" />
-            </span>
-          </a>
-        </div>
-
-        <div className="mt-6 rounded-lg border border-border bg-card p-6">
-          <p className="font-mono text-xs text-muted-foreground mb-4">
-            GITHUB_ACTIVITY
-          </p>
-          <GitHubActivity />
-          <p className="mt-4 text-xs text-muted-foreground font-mono">
-            contributions on{" "}
             <a
               href="https://github.com/Jan-Ric"
               target="_blank"
               rel="noreferrer"
-              className="text-[color:var(--link)] hover:underline"
+              className="rounded-md border border-border p-3 hover:border-[color:var(--primary)] transition-colors"
+              aria-label="GitHub"
             >
-              @Jan-Ric
+              <Github className="size-5" />
             </a>
-          </p>
+          </Tile>
         </div>
       </div>
     </section>
