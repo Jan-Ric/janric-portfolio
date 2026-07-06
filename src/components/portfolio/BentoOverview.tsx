@@ -1,4 +1,5 @@
-import { Github, Users, Database, Radio, GraduationCap, Award } from "lucide-react";
+import { Users, Database, Radio, GraduationCap, Award } from "lucide-react";
+import { GitHubActivity } from "./GitHubActivity";
 
 function Tile({
   children,
@@ -105,22 +106,9 @@ export function BentoOverview() {
             <p className="text-xs text-muted-foreground">Antenna, UAV, 6-DOF arm, Techno-economic</p>
           </Tile>
 
-          <Tile className="md:col-span-2 flex items-center justify-between">
-            <div>
-              <p className="font-mono text-xs text-muted-foreground">FIND ME ON</p>
-              <p className="mt-1 font-semibold">github.com/Jan-Ric</p>
-              <p className="text-xs text-muted-foreground">Open to collaboration</p>
-            </div>
-            <a
-              href="https://github.com/Jan-Ric"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-md border border-border p-3 hover:border-[color:var(--primary)] transition-colors"
-              aria-label="GitHub"
-            >
-              <Github className="size-5" />
-            </a>
-          </Tile>
+          <div className="md:col-span-2">
+            <GitHubActivity />
+          </div>
         </div>
       </div>
     </section>
