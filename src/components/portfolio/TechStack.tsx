@@ -11,17 +11,17 @@ const generalGroups = [
   {
     label: "LANGUAGES & DATABASES",
     icon: Database,
-    items: ["Python", "SQL", "PostgreSQL", "Firebase", "Supabase"],
+    items: ["Python", "SQL", "PostgreSQL", "Snowflake", "Firebase", "Supabase"],
   },
   {
     label: "DATA ENGINEERING & ANALYTICS",
     icon: Code2,
-    items: ["Apache Spark", "Pandas", "NumPy", "Matplotlib", "Excel"],
+    items: ["Apache Spark", "Apache Airflow", "Pandas", "NumPy", "Matplotlib", "PyTorch", "OpenCV", "Excel"],
   },
   {
     label: "TOOLS & DEVOPS",
     icon: Wrench,
-    items: ["Git", "GitHub", "Docker", "VS Code"],
+    items: ["Git", "GitHub", "Docker", "VS Code", "Vercel"],
   },
 ];
 
