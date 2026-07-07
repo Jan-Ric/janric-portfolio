@@ -2,10 +2,10 @@ export const featuredProjects = [
   {
     title: "Autonomous AI-Powered UAV Pest Monitoring System",
     tag: "Capstone · AI",
-    duration: "Autonomous UAV | Multimodal Model",
+    duration: "Nighttime Monitoring | Multimodal Model",
     description:
-      "Autonomous UAV that estimates pest density with a lightweight vision model, guiding targeted spraying.",
-    stack: ["Computer Vision", "UAV", "Edge AI"],
+      "A self-flying drone system that streams live video of crop fields to the cloud. It uses AI to automatically spot pests, count their population, and display the results on a live web dashboard.",
+    stack: ["API-based LLM", "UAV", "Edge AI"],
     impact: "Proactive Targeted Intervention, Efficient usage of pesticide",
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/UAV-Pest-Monitoring",
   },
@@ -23,7 +23,7 @@ export const featuredProjects = [
     title: "Automated Robotic Banana Sorting System",
     tag: "Robotics · AI",
     duration: "6-DOF Arm | YOLO Fine-tuning",
-    description: "YOLOv11 + robotic arm classification and sorting of banana quality.",
+    description: "An automated robotic sorting system that uses a live camera feed and AI to inspect fruit quality for food manufacturing. It instantly grades ripeness and triggers a 6-axis robotic arm to physically sort the items using predefined motion paths in real time.",
     stack: ["YOLOv11", "Robotics", "Computer Vision"],
     impact: "Automated Quality Control, Reduced labor cost",
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
@@ -105,7 +105,7 @@ export const experience = [
     org: "Panasonic Manufacturing Philippines Corp.",
     period: "Aug – Oct 2024",
     points: [
-      "Diagnosed electronics training units and validated repairs -CCTV, Air Freshener, Camera, Fastfood Kiosk\u00a0",
+      "Diagnosed electronics training units and validated repairs - CCTV, Air Freshener, Camera, Fastfood Kiosk\u00a0",
       "Supported dealership onboarding sessions - Projectors, Washing Machines, Refrigerators",
       "Transformed raw service records into structured Excel reports.",
     ],
@@ -150,7 +150,7 @@ export const affiliations = [
     name: "Data Engineering Pilipinas",
     role: "Builder & Scholar",
     period: "2025 – present",
-    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
+    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
     link: "https://dataengineering.ph/",
   },
   {
@@ -162,7 +162,7 @@ export const affiliations = [
   },
   {
     name: "Radio Engineering Circle",
-    role: "Student Member",
+    role: "Neophyte Member",
     period: "2022 – 2026",
     note: "• Major Participation: Call sign 4G1GSW aired (QRV) for the 2024 DU3MY Contest on 2-meter FM from the grid location in Sampaloc, Manila.",
     link: "https://beta.rec.org.ph/",
