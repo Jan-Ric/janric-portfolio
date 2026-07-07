@@ -10,7 +10,7 @@ export function GitHubActivity() {
   }, []);
 
   return (
-    <div className="rounded-lg border border-border bg-card p-6 flex flex-col items-center justify-center">
+    <div className="card-hover rounded-lg border border-border bg-card p-6 flex flex-col items-center justify-center h-full">
       <p className="font-mono text-xs text-muted-foreground mb-4 self-start">
         GITHUB_ACTIVITY
       </p>

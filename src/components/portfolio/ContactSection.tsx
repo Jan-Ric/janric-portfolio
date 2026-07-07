@@ -72,17 +72,6 @@ export function ContactSection() {
             </a>
           </div>
 
-          <div className="rounded-lg border border-border bg-card p-6 flex flex-col items-center justify-center text-center">
-            <p className="font-mono text-xs text-muted-foreground mb-3">
-              OPEN TO
-            </p>
-            <p className="text-sm font-medium text-foreground max-w-xs">
-              Data Engineering & Analytics roles, collaborations, and community projects.
-            </p>
-            <p className="mt-3 text-xs text-muted-foreground max-w-xs">
-              Recruiters, collaborators, and community members — reach out via email or LinkedIn.
-            </p>
-          </div>
         </div>
       </div>
     </section>
