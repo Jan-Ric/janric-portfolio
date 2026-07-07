@@ -10,7 +10,7 @@ export function Certifications() {
 
         <div className="grid gap-4 md:grid-cols-3">
           <div className="card-hover rounded-lg border border-border bg-card p-5">
-            <p className="font-mono text-xs text-[color:var(--primary)]">PRC BOARD</p>
+            <p className="font-mono text-xs text-[color:var(--primary)]">PRC BOARD{"\u00a0"}</p>
             <ul className="mt-3 space-y-3">
               {certifications.prc.map((c) => (
                 <li key={c.label} className="flex items-start gap-2 text-sm">
@@ -40,7 +40,7 @@ export function Certifications() {
           </div>
 
           <div className="card-hover rounded-lg border border-border bg-card p-5 md:col-span-1">
-            <p className="font-mono text-xs text-[color:var(--primary)]">DATACAMP</p>
+            <p className="font-mono text-xs text-[color:var(--primary)]">DATACAMP CERTIFICATIONS</p>
             <div className="mt-3 flex flex-wrap gap-1.5">
               {certifications.datacamp.map((d) => (
                 <span
