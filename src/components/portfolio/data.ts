@@ -16,7 +16,7 @@ export const featuredProjects = [
     description:
       "ISO-based audit with a decade-long demand forecast. Modeled LED retrofits and phantom-load elimination to cut projected costs.",
     stack: ["Energy Audit", "Forecasting", "Excel", "Python"],
-    impact: "Projected energy cost reduction",
+    impact: "Projected energy cost reduction\u00a0",
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit",
   },
   {
@@ -25,7 +25,7 @@ export const featuredProjects = [
     duration: "6-DOF Arm | YOLO Fine-tuning",
     description: "YOLOv11 + robotic arm classification and sorting of banana quality.",
     stack: ["YOLOv11", "Robotics", "Computer Vision"],
-    impact: "Automated quality classification",
+    impact: "Automated Quality Control, Reduced labor cost",
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
   },
 ];
@@ -105,8 +105,8 @@ export const experience = [
     org: "Panasonic Manufacturing Philippines Corp.",
     period: "Aug – Oct 2024",
     points: [
-      "Diagnosed electronics training units and validated repairs.",
-      "Supported dealership onboarding sessions.",
+      "Diagnosed electronics training units and validated repairs -CCTV, Air Freshener, Camera, Fastfood Kiosk\u00a0",
+      "Supported dealership onboarding sessions - Projectors, Washing Machines, Refrigerators",
       "Transformed raw service records into structured Excel reports.",
     ],
   },
@@ -150,7 +150,7 @@ export const affiliations = [
     name: "Data Engineering Pilipinas",
     role: "Builder & Scholar",
     period: "2025 – present",
-    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
+    note: '•\u00a0Top 50 of 850 applicants on their program: "DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey"\u00a0\u00a0\u00a0\n•\u00a0Over 50+ courses completed on DataCamp as a scholar by DEP',
     link: "https://dataengineering.ph/",
   },
   {
@@ -195,7 +195,7 @@ export const nonEngineeringAffiliations = [
 
 export const education = [
   {
-    school: "Polytechnic University of the Philippines",
+    school: "Polytechnic University of the Philippines (Main Campus)",
     degree: "B.S. Electronics Engineering (GWA: 1.46)",
     period: "Graduated Sep 2025",
   },
