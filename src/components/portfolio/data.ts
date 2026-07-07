@@ -2,7 +2,7 @@ export const featuredProjects = [
   {
     title: "Autonomous AI-Powered UAV Pest Monitoring System",
     tag: "Capstone · AI",
-    duration: "Autonomous UAV",
+    duration: "Autonomous UAV | Multimodal Model",
     description:
       "Autonomous UAV that estimates pest density with a lightweight vision model, guiding targeted spraying.",
     stack: ["Computer Vision", "UAV", "Edge AI"],
@@ -12,7 +12,7 @@ export const featuredProjects = [
   {
     title: "ISO-Based Energy Audit & 10-Year Demand Forecasting for Barangay Lower Bicutan",
     tag: "Data Analytics",
-    duration: "Brgy. Lower Bicutan",
+    duration: "Energy Audit & Forecasting",
     description:
       "ISO-based audit with a decade-long demand forecast. Modeled LED retrofits and phantom-load elimination to cut projected costs.",
     stack: ["Energy Audit", "Forecasting", "Excel", "Python"],
@@ -22,7 +22,7 @@ export const featuredProjects = [
   {
     title: "Automated Robotic Banana Sorting System",
     tag: "Robotics · AI",
-    duration: "6-DOF Arm",
+    duration: "6-DOF Arm | YOLO Fine-tuning",
     description: "YOLOv11 + robotic arm classification and sorting of banana quality.",
     stack: ["YOLOv11", "Robotics", "Computer Vision"],
     impact: "Automated quality classification",
@@ -72,7 +72,7 @@ export const otherProjects = [
   {
     title: "Critical Review of QR Code Utilization Study",
     description:
-      "Conducted a critical methodological review of an undergraduate QR code utilization study, identifying statistical inconsistencies, invalid hypothesis testing, sampling issues, and reliability concerns while recognizing its descriptive contributions.",
+      "Provides useful descriptive insights into QR code usage, its major statistical conclusions are not supported by sound methodology.",
     stack: ["Research Review"],
     link: "https://github.com/Jan-Ric/Research-and-Projects/tree/main/QR-Code-Research-Review",
   },
