@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Github, FileText, MapPin } from "lucide-react";
 import { TypedTagline } from "./TypedTagline";
 import photoAsset from "@/assets/my_photo.jpeg.asset.json";
+import { useResumeDownloads } from "./useSiteMetrics";
 
 export function Hero() {
+  const { count: resumeDownloads, record: recordResumeDownload } = useResumeDownloads();
   return (
     <section id="top" className="relative overflow-hidden border-b border-border">
       <div className="absolute inset-0 grid-bg pointer-events-none" aria-hidden />
@@ -39,12 +41,28 @@ export function Hero() {
           combining AI, hardware, and cloud infrastructure optimization is the way to tackle complex
           datasets and give businesses real data-driven decisions.
         </p>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Button asChild size="lg" className="font-mono">
-            <a href="https://docs.google.com/document/d/1_AKf4m8fRLYZylR4gtHdp2rnrf5BxRjc/export?format=pdf" target="_blank" rel="noreferrer">
-              <FileText className="size-4" /> Download Resume
-            </a>
-          </Button>
+        <div className="mt-8 flex flex-wrap items-start gap-3">
+          <div className="flex flex-col gap-1">
+            <Button asChild size="lg" className="font-mono">
+              <a
+                href="https://docs.google.com/document/d/1_AKf4m8fRLYZylR4gtHdp2rnrf5BxRjc/export?format=pdf"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => {
+                  void recordResumeDownload();
+                }}
+              >
+                <FileText className="size-4" /> Download Resume
+              </a>
+            </Button>
+            <p className="font-mono text-[11px] text-muted-foreground pl-1">
+              ↓{" "}
+              <span className="text-foreground">
+                {resumeDownloads == null ? "—" : resumeDownloads.toLocaleString()}
+              </span>{" "}
+              downloads
+            </p>
+          </div>
           <Button asChild size="lg" variant="outline" className="font-mono">
             <a href="https://github.com/Jan-Ric" target="_blank" rel="noreferrer">
               <Github className="size-4" /> View GitHub

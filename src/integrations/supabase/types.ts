@@ -38,12 +38,30 @@ export type Database = {
         }
         Relationships: []
       }
+      site_metrics: {
+        Row: {
+          count: number
+          key: string
+          updated_at: string
+        }
+        Insert: {
+          count?: number
+          key: string
+          updated_at?: string
+        }
+        Update: {
+          count?: number
+          key?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      increment_site_metric: { Args: { _key: string }; Returns: number }
     }
     Enums: {
       [_ in never]: never
