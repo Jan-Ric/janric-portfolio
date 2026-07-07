@@ -109,9 +109,9 @@ export function BentoOverview() {
             <p className="text-xs text-muted-foreground">Antenna, UAV, 6-DOF arm, Techno-economic</p>
           </Tile>
 
-          <Tile className="md:col-span-2">
+          <div className="md:col-span-2">
             <GitHubActivity />
-          </Tile>
+          </div>
         </div>
       </div>
     </section>

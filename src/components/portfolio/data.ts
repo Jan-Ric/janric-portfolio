@@ -140,25 +140,11 @@ export const certifications = {
 
 export const affiliations = [
   {
-    name: "IECEP",
-    role: "Official member",
-    period: "2021 – present",
-    note: "• Institute of Electronics Engineers of the Philippines.",
-    link: "https://myiecep.net/",
-  },
-  {
-    name: "Radio Engineering Circle",
-    role: "Student Member",
-    period: "2022 – 2026",
-    note: "• Major Participation: Call sign 4G1GSW aired (QRV) for the 2024 DU3MY Contest on 2-meter FM from the grid location in Sampaloc, Manila.",
-    link: "https://beta.rec.org.ph/",
-  },
-  {
-    name: "PUP ECESS",
-    role: "Sectorial Chairperson",
-    period: "2024 – 2025",
-    note: "• Led the sector from 1st to 4th year in representing all ECE department activities.",
-    link: "https://www.facebook.com/pup.ecess1979",
+    name: "BetterGov.PH",
+    role: "Volunteer member/learner",
+    period: "2026 – present",
+    note: "• Participating in a forum for building a better Philippine national government website.",
+    link: "https://bettergov.ph/",
   },
   {
     name: "Data Engineering Pilipinas",
@@ -168,11 +154,25 @@ export const affiliations = [
     link: "https://dataengineering.ph/",
   },
   {
-    name: "BetterGov.PH",
-    role: "Volunteer member/learner",
-    period: "2026 – present",
-    note: "• Participating in a forum for building a better Philippine national government website.",
-    link: "https://bettergov.ph/",
+    name: "PUP ECESS",
+    role: "Sectorial Chairperson",
+    period: "2024 – 2025",
+    note: "• Led the sector from 1st to 4th year in representing all ECE department activities.",
+    link: "https://www.facebook.com/pup.ecess1979",
+  },
+  {
+    name: "Radio Engineering Circle",
+    role: "Student Member",
+    period: "2022 – 2026",
+    note: "• Major Participation: Call sign 4G1GSW aired (QRV) for the 2024 DU3MY Contest on 2-meter FM from the grid location in Sampaloc, Manila.",
+    link: "https://beta.rec.org.ph/",
+  },
+  {
+    name: "IECEP",
+    role: "Official member",
+    period: "2021 – present",
+    note: "• Institute of Electronics Engineers of the Philippines.",
+    link: "https://myiecep.net/",
   },
 ];
 
