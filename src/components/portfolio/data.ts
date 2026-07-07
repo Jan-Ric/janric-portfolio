@@ -123,8 +123,8 @@ export const experience = [
 
 export const certifications = {
   prc: [
-    { label: "Licensed Electronics Engineer (ECE)", meta: "GWA 85 · PRC Board" },
-    { label: "Electronics Technician (ECT)", meta: "GWA 80 · PRC Board" },
+    { label: "Licensed Electronics Engineer (ECE)", meta: "GWA 85" },
+    { label: "Licensed Electronics Technician (ECT)", meta: "GWA 80" },
   ],
   safety: [{ label: "Basic Occupational Safety and Health for Safety Officer 2", meta: "DOLE-accredited · Ref B20426-026" }],
   datacamp: [
