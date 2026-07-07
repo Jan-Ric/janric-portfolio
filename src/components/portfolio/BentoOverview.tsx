@@ -37,8 +37,8 @@ export function BentoOverview() {
               <p className="mt-2 text-sm font-medium text-foreground">
                 Solar Power Plant Inverter Analysis: A 12-Month AC Output Quantification of Inverters with a Negative Gap Between Actual and Predictive Yield
               </p>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-                Forecasts solar energy yield from inverter telemetry using a modern data engineering stack to optimize revenue and operations.
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                Forecasts solar energy yield from inverter telemetry using a modern data engineering stack to optimize revenue and operations.{"\n\n\n"}Note: This project is still in development; changes and improvements and upgrades to features, data sources, data models and tools are not final.
               </p>
             </div>
             <div className="mt-4 flex flex-wrap gap-1.5 font-mono text-[11px]">
@@ -97,16 +97,16 @@ export function BentoOverview() {
 
           <Tile>
             <Database className="size-5 text-[color:var(--success)]" />
-            <p className="mt-2 font-mono text-xs text-muted-foreground">FOCUS</p>
+            <p className="mt-2 font-mono text-xs text-muted-foreground">FIELD FOCUS</p>
             <p className="mt-1 text-sm font-semibold">Data Engineering & Analytics of Energy systems</p>
-            <p className="text-xs text-muted-foreground">SQL · Python · Cloud · Energy · Engineering</p>
+            <p className="text-xs text-muted-foreground">&nbsp;SQL · Python · Cloud · Data Pipelines · Engineering ·&nbsp; Management ·&nbsp; Data Modelling & Architecture</p>
           </Tile>
 
           <Tile>
             <Radio className="size-5 text-[color:var(--primary)]" />
-            <p className="mt-2 font-mono text-xs text-muted-foreground">HARDWARE ROOTS</p>
-            <p className="mt-1 text-sm font-semibold">Instrumentation · RF · IoT · Robotics · Renewable</p>
-            <p className="text-xs text-muted-foreground">Antenna, UAV, 6-DOF arm, Techno-economic</p>
+            <p className="mt-2 font-mono text-xs text-muted-foreground">HARDWARE-T-CLOUD INTEGRATION</p>
+            <p className="mt-1 text-sm font-semibold">ECE Specializing in Edge and IoT Data</p>
+            <p className="text-xs text-muted-foreground">Edge Computing · IoT ·&nbsp; Real-time Data Ingestion · Sensor Data Validation · MQTT · Streaming Architecture</p>
           </Tile>
 
           <div className="md:col-span-2">
