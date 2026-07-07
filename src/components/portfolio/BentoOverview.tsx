@@ -32,8 +32,11 @@ export function BentoOverview() {
                 rel="noreferrer"
                 className="mt-2 inline-block text-xl font-semibold hover:text-[color:var(--link)] hover:underline"
               >
-                Solar Inverter Analysis — end-to-end pipeline
+                DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey
               </a>
+              <p className="mt-2 text-sm font-medium text-foreground">
+                Solar Power Plant Inverter Analysis: A 12-Month AC Output Quantification of Inverters with a Negative Gap Between Actual and Predictive Yield
+              </p>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                 Forecasts solar energy yield from inverter telemetry using a modern data engineering stack to optimize revenue and operations.
               </p>
@@ -106,9 +109,9 @@ export function BentoOverview() {
             <p className="text-xs text-muted-foreground">Antenna, UAV, 6-DOF arm, Techno-economic</p>
           </Tile>
 
-          <div className="md:col-span-2">
+          <Tile className="md:col-span-2">
             <GitHubActivity />
-          </div>
+          </Tile>
         </div>
       </div>
     </section>
