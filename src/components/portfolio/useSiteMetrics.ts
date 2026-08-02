@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { incrementSiteMetric } from "@/lib/metrics.functions";
 
 type MetricKey = "visitors" | "resume_downloads";
 
@@ -14,9 +15,12 @@ async function fetchCount(key: MetricKey): Promise<number | null> {
 }
 
 async function incrementMetric(key: MetricKey): Promise<number | null> {
-  const { data, error } = await supabase.rpc("increment_site_metric", { _key: key });
-  if (error || data == null) return null;
-  return Number(data);
+  try {
+    const result = await incrementSiteMetric({ data: { key } });
+    return result.count;
+  } catch {
+    return null;
+  }
 }
 
 export function useVisitorCount() {
