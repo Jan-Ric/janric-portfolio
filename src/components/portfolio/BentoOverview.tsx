@@ -102,16 +102,16 @@ export function BentoOverview() {
 
           <Tile>
             <Database className="size-5 text-[color:var(--success)]" />
-            <p className="mt-2 font-mono text-xs text-muted-foreground">FIELD FOCUS</p>
-            <p className="mt-1 text-sm font-semibold">Data Engineering & Analytics of Energy systems</p>
-            <p className="text-xs text-muted-foreground">&nbsp;SQL · Python · Cloud · Data Pipelines · Engineering ·&nbsp; Management ·&nbsp; Data Modelling & Architecture</p>
+            <p className="mt-2 font-mono text-xs text-muted-foreground uppercase">GRID & ENERGY OPTIMIZATION</p>
+            <p className="mt-1 text-sm font-semibold">Data Engineering & Analytics of Energy Systems</p>
+            <p className="text-xs text-muted-foreground">SQL · Python · Cloud · Data Pipelines · Machine Learning · Time-Series Forecasting · Smart Grid Analytics · Data Modelling</p>
           </Tile>
 
           <Tile>
             <Radio className="size-5 text-[color:var(--primary)]" />
-            <p className="mt-2 font-mono text-xs text-muted-foreground">HARDWARE-T-CLOUD INTEGRATION</p>
-            <p className="mt-1 text-sm font-semibold">ECE Specializing in Edge and IoT Data</p>
-            <p className="text-xs text-muted-foreground">Edge Computing · IoT ·&nbsp; Real-time Data Ingestion · Sensor Data Validation · MQTT · Streaming Architecture</p>
+            <p className="mt-2 font-mono text-xs text-muted-foreground uppercase">RENEWABLE & GRID INTEGRATION</p>
+            <p className="mt-1 text-sm font-semibold">ECE Specializing in Energy Field Design & IoT</p>
+            <p className="text-xs text-muted-foreground">Renewable Energy Hardware · Edge Computing · IoT · Real-time Data Ingestion · SCADA · Sensor Validation</p>
           </Tile>
 
           <div className="md:col-span-2">

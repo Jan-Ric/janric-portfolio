@@ -16,7 +16,7 @@ const generalGroups = [
   {
     label: "DATA ENGINEERING & ANALYTICS",
     icon: Code2,
-    items: ["Apache Spark", "Apache Airflow", "Pandas", "NumPy", "Matplotlib", "PyTorch", "OpenCV", "Excel"],
+    items: ["Snowflake", "Apache Airflow", "Pandas", "NumPy", "Matplotlib", "PyTorch", "OpenCV", "Excel"],
   },
   {
     label: "TOOLS & DEVOPS",
