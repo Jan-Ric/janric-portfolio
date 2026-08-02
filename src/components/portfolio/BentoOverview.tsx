@@ -27,16 +27,21 @@ export function BentoOverview() {
             <div>
               <p className="font-mono text-xs text-[color:var(--primary)]">CURRENTLY BUILDING</p>
               <a
-                href="https://github.com/Jan-Ric/dep-data-engineering-jan-ric"
+                href="https://dataengineeringpilipinas.github.io/dep-data-engineering-open-track/ fbclid=IwY2xjawSi6elleHRuA2FlbQIxMABicmlkETFTcHZ5QlZ4dzExbzFPUllQc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHiJwGLsZbussaHVw15Joss4qhliPfc9BPam_7jIKAWmQNmV8awVwWmtasCac_aem_YWdncwNtl5Ro7vPW3PPT3NU5B-AL&brid=YWdncwF2V-lKwL9fayC4a_0sYS4B#top"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-2 inline-block text-xl font-semibold hover:text-[color:var(--link)] hover:underline"
               >
                 DEP Data Engineering Open Track: A 6-Month Project-Driven Build Journey
               </a>
-              <p className="mt-2 text-sm font-medium text-foreground">
+              <a
+                href="https://github.com/Jan-Ric/dep-data-engineering-jan-ric"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-2 block text-sm font-medium text-foreground hover:text-[color:var(--link)] hover:underline"
+              >
                 Solar Power Plant Inverter Analysis: A 12-Month AC Output Quantification of Inverters with a Negative Gap Between Actual and Predictive Yield
-              </p>
+              </a>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
                 Forecasts solar energy yield from inverter telemetry using a modern data engineering stack to optimize revenue and operations.{"\n\n\n"}Note: This project is still in development; changes and improvements and upgrades to features, data sources, data models and tools are not final.
               </p>
