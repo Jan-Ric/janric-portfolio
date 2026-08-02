@@ -9,19 +9,19 @@ import {
 
 const generalGroups = [
   {
-    label: "LANGUAGES & DATABASES",
+    label: "DATA ENGINEERING & WAREHOUSING",
     icon: Database,
-    items: ["Python", "SQL", "PostgreSQL", "Snowflake", "Firebase", "Supabase"],
+    items: ["Snowflake", "dbt", "SQL", "PostgreSQL", "Firebase", "AWS", "Google Workspace"],
   },
   {
-    label: "DATA ENGINEERING & ANALYTICS",
-    icon: Code2,
-    items: ["Snowflake", "Apache Airflow", "Pandas", "NumPy", "Matplotlib", "PyTorch", "OpenCV", "Excel"],
-  },
-  {
-    label: "TOOLS & DEVOPS",
+    label: "ORCHESTRATION, DEVOPS & TOOLS",
     icon: Wrench,
-    items: ["Git", "GitHub", "Docker", "VS Code", "Vercel"],
+    items: ["Apache Airflow", "Docker", "Excel", "GitHub", "Claude Code", "VS Code", "MATLAB"],
+  },
+  {
+    label: "DATA ANALYTICS & VISUALIZATION",
+    icon: Code2,
+    items: ["Python", "Power BI", "Pandas", "NumPy", "Matplotlib"],
   },
 ];
 
