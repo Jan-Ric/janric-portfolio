@@ -27,7 +27,7 @@ export function BentoOverview() {
             <div>
               <p className="font-mono text-xs text-[color:var(--primary)]">CURRENTLY BUILDING</p>
               <a
-                href="https://dataengineeringpilipinas.github.io/dep-data-engineering-open-track/ fbclid=IwY2xjawSi6elleHRuA2FlbQIxMABicmlkETFTcHZ5QlZ4dzExbzFPUllQc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHiJwGLsZbussaHVw15Joss4qhliPfc9BPam_7jIKAWmQNmV8awVwWmtasCac_aem_YWdncwNtl5Ro7vPW3PPT3NU5B-AL&brid=YWdncwF2V-lKwL9fayC4a_0sYS4B#top"
+                href="https://dataengineeringpilipinas.github.io/dep-data-engineering-open-track/?fbclid=IwY2xjawSi6elleHRuA2FlbQIxMABicmlkETFTcHZ5QlZ4dzExbzFPUllQc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHiJwGLsZbussaHVw15Joss4qhliPfc9BPam_7jIKAWmQNmV8awVwWmtasCac_aem_YWdncwNtl5Ro7vPW3PPT3NU5B-AL&brid=YWdncwF2V-lKwL9fayC4a_0sYS4B#about"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-2 inline-block text-xl font-semibold hover:text-[color:var(--link)] hover:underline"
