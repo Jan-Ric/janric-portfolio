@@ -105,9 +105,10 @@ export const experience = [
     org: "Panasonic Manufacturing Philippines Corp.",
     period: "Aug – Oct 2024",
     points: [
-      "Diagnosed electronics training units and validated repairs - CCTV, Air Freshener, Camera, Fastfood Kiosk\u00a0",
-      "Supported dealership onboarding sessions - Projectors, Washing Machines, Refrigerators",
-      "Transformed raw service records into structured Excel reports.",
+      "Transformed a consolidating service records, warranty claims, spare parts counts, and unit status into structured Excel reports (Pivot Table & Charts), reducing operational decision turnaround on after-sales.",
+      "Analyzed and reclassified available electronics training units by analyzing service manuals, THT/SMD rework, interpreting circuit schematics, conducting physical inspections, and validating electrical parameters through multimeter and clamp meter testing.",
+      "Supported dealership onboarding across three product lines by facilitating and coordinating structured training sessions, capturing technical knowledge through technical documentation and service manuals.",
+      "Reduced misdiagnosis rates on evaluated units by applying structured root-cause analysis.",
     ],
   },
   {
