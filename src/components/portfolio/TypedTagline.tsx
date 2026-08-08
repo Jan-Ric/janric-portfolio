@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 
 const phrases = [
   "Electronics Engineer",
-  "Data Engineer in Training",
+  "Upskilling in Technical ECE & Data Science",
   "Analytics Builder",
   "PRC-Licensed ECE / ECT",
 ];
+
 
 export function TypedTagline() {
   const [phraseIdx, setPhraseIdx] = useState(0);
