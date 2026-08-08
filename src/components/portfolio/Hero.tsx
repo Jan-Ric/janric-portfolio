@@ -16,8 +16,7 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-24 md:grid-cols-[1fr_auto] md:items-center md:py-32">
         <div>
         <p className="font-mono text-xs text-muted-foreground">
-          <span className="text-[color:var(--success)]">●</span> Available for Data Engineering &
-          Analytics roles
+          <span className="text-[color:var(--success)]">●</span> Available for Electronics Engineering & Data Science Roles
         </p>
         <h1 className="mt-4 text-4xl md:text-6xl font-semibold tracking-tight text-foreground">
           Jan Ric <span className="text-[color:var(--primary)]">Maranan</span> Hogat
@@ -26,7 +25,7 @@ export function Hero() {
           <TypedTagline />
         </div>
         <p className="mt-6 max-w-2xl text-muted-foreground leading-relaxed">
-          Electronics engineer and technician transitioning into data engineering and analytics.
+          Electronics Engineer (ECE) leveraging deep expertise in instrumentation, control systems, and hardware telemetry to architect end-to-end solutions in Data Engineering and Applied AI.
           Active builder in the{" "}
           <a
             href="https://dataengineering.ph/"
