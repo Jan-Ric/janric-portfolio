@@ -201,15 +201,28 @@ export const education = [
     degree: "B.S. Electronics Engineering (GWA: 1.46)",
     period: "Graduated Sep 2025",
   },
-  { school: "Morong National High School", degree: "STEM · With Honors", period: "2019 – 2021" },
+  {
+    school: "Morong National High School",
+    degree: "Senior High · STEM · With Honors",
+    period: "2019 – 2021",
+  },
   {
     school: "Pililla Integrated National High School",
-    degree: "STEM · With High Honors",
+    degree: "Junior High · STEM · With High Honors",
     period: "2015 – 2019",
+    highlights: [
+      "Best in Research Presenter (Grade 10)",
+      "Conducted Life Science Research (Grades 9–10)",
+    ],
   },
   {
     school: "Pililla Elementary School Central",
     degree: "Pilot Section · Batch Salutatorian",
     period: "2009 – 2015",
+    highlights: [
+      "Boys Scout Troop Leader (Grades 4–6)",
+      "MTAP Math Challenge (Grades 5–6)",
+      "Class President (Grade 6)",
+    ],
   },
 ];
