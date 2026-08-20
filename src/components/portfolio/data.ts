@@ -136,6 +136,7 @@ export const certifications = {
     "Python Data Associate",
     "AI Engineer for Developer Associate",
     "AI Fundamentals",
+    "AWS Cloud Practitioner (CLF-C02)",
   ],
 };
 
