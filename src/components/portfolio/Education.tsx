@@ -18,6 +18,18 @@ export function Education() {
               <p className="font-mono text-xs text-muted-foreground">{e.period}</p>
               <h3 className="mt-1 font-semibold">{e.school}</h3>
               <p className="text-sm text-[color:var(--link)]">{e.degree}</p>
+              {"highlights" in e && e.highlights?.length ? (
+                <ul className="mt-2 space-y-0.5 text-xs text-muted-foreground">
+                  {e.highlights.map((h) => (
+                    <li key={h} className="flex gap-1.5">
+                      <span className="text-[color:var(--primary)]" aria-hidden>
+                        ▸
+                      </span>
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </li>
           ))}
         </ol>
