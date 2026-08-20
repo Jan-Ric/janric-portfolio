@@ -22,10 +22,7 @@ export function SiteNav() {
             alt="Jan Ric logo"
             className="size-7 rounded-full border border-border object-cover"
           />
-          <span className="flex flex-col leading-tight">
-            <span>janric-portfolio</span>
-            <span className="text-muted-foreground">.dev</span>
-          </span>
+          janric<span className="text-muted-foreground">.dev</span>
         </a>
         <nav className="hidden md:flex items-center gap-6 font-mono text-sm">
           {links.map((l) => (
