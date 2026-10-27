@@ -37,6 +37,7 @@ export function CertificateDialog({ cert }: { cert: CertificateFile }) {
           {cert.fileType === "pdf" ? (
             <iframe
               src={cert.filePath}
+              tabIndex={-1}
               title={`${cert.title} certificate issued by ${cert.issuer}`}
               className="size-full rounded-b-lg bg-white"
             />
