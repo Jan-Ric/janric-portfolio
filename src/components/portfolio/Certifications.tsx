@@ -1,12 +1,16 @@
 import { SectionHeading } from "./SectionHeading";
 import { certifications } from "./data";
+import { datacampCertificates } from "./certificatesData";
+import { CertificateDialog } from "./CertificateModal";
 import { BadgeCheck, ShieldCheck } from "lucide-react";
 
 export function Certifications() {
   return (
     <section id="certs" className="border-b border-border">
       <div className="mx-auto max-w-6xl px-4 py-20">
-        <SectionHeading eyebrow="credentials" title="Licenses & Certifications" />
+        <SectionHeading eyebrow="credentials" title="Licenses & Certifications">
+          Click a certificate name to view the original document.
+        </SectionHeading>
 
         <div className="grid gap-4 md:grid-cols-3">
           <div className="card-hover rounded-lg border border-border bg-card p-5">
@@ -42,14 +46,18 @@ export function Certifications() {
           <div className="card-hover rounded-lg border border-border bg-card p-5 md:col-span-1">
             <p className="font-mono text-xs text-[color:var(--primary)]">DATACAMP CERTIFICATIONS</p>
             <div className="mt-3 flex flex-wrap gap-1.5">
-              {certifications.datacamp.map((d) => (
-                <span
-                  key={d}
-                  className="rounded-md border border-border bg-secondary/40 px-2 py-1 font-mono text-[11px]"
-                >
-                  {d}
-                </span>
-              ))}
+              {datacampCertificates.map((cert) =>
+                cert.filePath ? (
+                  <CertificateDialog key={cert.title} cert={cert} />
+                ) : (
+                  <span
+                    key={cert.title}
+                    className="rounded-md border border-border bg-secondary/40 px-2 py-1 font-mono text-[11px] text-muted-foreground"
+                  >
+                    {cert.title}
+                  </span>
+                ),
+              )}
             </div>
           </div>
         </div>
