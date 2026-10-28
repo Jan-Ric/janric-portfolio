@@ -1,4 +1,4 @@
-# Data Engineering Portfolio
+# Jan Ric Hogat - Engineering Portfolio
 
 Study my prompt and help me refine it by planning my preferred website/portfolio.
 
