@@ -28,8 +28,19 @@ export function Projects() {
           {featuredProjects.map((p) => (
             <article
               key={p.title}
-              className="card-hover flex flex-col rounded-lg border border-border bg-card p-6"
+              className="card-hover flex flex-col overflow-hidden rounded-lg border border-border bg-card"
             >
+              {"image" in p && p.image ? (
+                <img
+                  src={p.image.src}
+                  alt={p.image.alt}
+                  width={800}
+                  height={450}
+                  loading="lazy"
+                  className="aspect-video w-full border-b border-border object-cover"
+                />
+              ) : null}
+              <div className="flex flex-col p-6 flex-1">
               <div className="flex items-center justify-between">
                 <Star className="size-4 text-[color:var(--primary)]" fill="currentColor" />
                 <span className="font-mono text-[11px] text-muted-foreground">{p.duration}</span>
