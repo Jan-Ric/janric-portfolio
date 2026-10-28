@@ -1,4 +1,35 @@
-export const featuredProjects = [
+type ProjectImage = {
+  src: string;
+  alt: string;
+};
+
+type FeaturedProject = {
+  title: string;
+  tag: string;
+  duration: string;
+  description: string;
+  stack: string[];
+  impact: string;
+  link: string;
+  image?: ProjectImage;
+};
+
+type OtherProject = {
+  title: string;
+  description: string;
+  stack: string[];
+  link: string;
+  metric?: string;
+};
+
+type NotSoCalledProject = {
+  title: string;
+  description: string;
+  stack: string[];
+  link: string;
+};
+
+export const featuredProjects: FeaturedProject[] = [
   {
     title: "Autonomous AI-Powered UAV Pest Monitoring System",
     tag: "Capstone · AI",
@@ -8,6 +39,10 @@ export const featuredProjects = [
     stack: ["API-based LLM", "UAV", "Edge AI"],
     impact: "Proactive Targeted Intervention, Efficient usage of pesticide",
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/UAV-Pest-Monitoring",
+    image: {
+      src: "/Pest-Patrol-Page.JPG",
+      alt: "Autonomous AI-Powered UAV Pest Monitoring System project page screenshot",
+    },
   },
   {
     title: "ISO-Based Energy Audit & 10-Year Demand Forecasting for Barangay Lower Bicutan",
@@ -18,6 +53,10 @@ export const featuredProjects = [
     stack: ["Energy Audit", "Forecasting", "Excel", "Python"],
     impact: "Projected energy cost reduction\u00a0",
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit",
+    image: {
+      src: "/Energy-Audit-Page.jpg",
+      alt: "ISO-Based Energy Audit & 10-Year Demand Forecasting for Barangay Lower Bicutan project page screenshot",
+    },
   },
   {
     title: "Automated Robotic Banana Sorting System",
@@ -27,10 +66,14 @@ export const featuredProjects = [
     stack: ["YOLOv11", "Robotics", "Computer Vision"],
     impact: "Automated Quality Control, Reduced labor cost",
     link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Robotic-Arm-Sorting",
+    image: {
+      src: "/Robotics-Page.jpg",
+      alt: "Automated Robotic Banana Sorting System project page screenshot",
+    },
   },
 ];
 
-export const otherProjects = [
+export const otherProjects: OtherProject[] = [
   {
     title: "Solar Power Plant Inverter Analysis",
     description:
