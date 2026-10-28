@@ -33,30 +33,19 @@ export function CertificateDialog({ cert }: { cert: CertificateFile }) {
           </DialogDescription>
         </DialogHeader>
 
-        <div className="min-h-0 flex-1">
-          {cert.fileType === "pdf" ? (
-            <iframe
-              src={cert.filePath}
-              tabIndex={-1}
-              title={`${cert.title} certificate issued by ${cert.issuer}`}
-              className="size-full rounded-b-lg bg-white"
-            />
-          ) : (
-            <div className="flex size-full items-center justify-center overflow-auto p-4">
-              <img
-                src={cert.filePath}
-                alt={`Certificate: ${cert.title}, issued by ${cert.issuer} on ${cert.date}`}
-                loading="lazy"
-                decoding="async"
-                width={1200}
-                height={850}
-                className="max-h-full max-w-full object-contain"
-              />
-            </div>
-          )}
+        <div className="flex min-h-0 flex-1 items-center justify-center overflow-auto p-4">
+          <img
+            src={cert.filePath}
+            alt={`${cert.title} certificate issued by ${cert.issuer}`}
+            loading="lazy"
+            decoding="async"
+            width={1200}
+            height={850}
+            className="max-h-full max-w-full object-contain"
+          />
         </div>
 
-        <div className="flex items-center justify-between gap-3 border-t border-border px-5 py-3">
+        <div className="flex items-center border-t border-border px-5 py-3">
           {cert.credentialUrl ? (
             <a
               href={cert.credentialUrl}
@@ -70,15 +59,6 @@ export function CertificateDialog({ cert }: { cert: CertificateFile }) {
           ) : (
             <span />
           )}
-          <a
-            href={cert.filePath}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 font-mono text-xs text-muted-foreground hover:text-foreground"
-          >
-            <ExternalLink className="size-3 shrink-0" />
-            Open in new tab
-          </a>
         </div>
       </DialogContent>
     </Dialog>
