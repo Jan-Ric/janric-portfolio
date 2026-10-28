@@ -72,6 +72,7 @@ export function Projects() {
                 <span className="text-muted-foreground">impact:</span>{" "}
                 <span className="text-[color:var(--success)]">{p.impact}</span>
               </p>
+              </div>
             </article>
           ))}
         </div>
