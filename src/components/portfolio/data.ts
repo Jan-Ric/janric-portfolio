@@ -159,22 +159,42 @@ export const notSoCalledProjects = [
   },
 ];
 
-const panasonicOjtPhotos = [
-  "/OJT/454102461_402982362398456_192437193789772941_n.jpg",
-  "/OJT/454135641_1053798906392110_6821122661150148282_n.jpg",
-  "/OJT/454157936_1164299364852596_7493137931355750325_n.jpg",
-  "/OJT/454528576_8063089013779060_7035260233287176221_n.jpg",
-  "/OJT/454565572_411455315285690_8220158487515809599_n.jpg",
-  "/OJT/454729955_299291233240062_2589192384814432939_n.jpg",
-  "/OJT/454766603_358752807284091_3295279011766645882_n.jpg",
-  "/OJT/455041605_2004107010027633_2617410747665496318_n.jpg",
-  "/OJT/455220579_1176716653609970_1362072165878438740_n.jpg",
-  "/OJT/455220579_521757506914060_8823999513616049656_n.jpg",
-  "/OJT/455258315_558207476529619_3499394975778472234_n.jpg",
-  "/OJT/455679107_1195252021792408_2019190081481320645_n.jpg",
-  "/OJT/456147812_509816718308933_942520143934450851_n.jpg",
-  "/OJT/456414584_449409444743259_2395867398586450026_n.jpg",
-  "/OJT/456563982_523693420313367_8639871471467783190_n.jpg",
+/**
+ * Panasonic OJT lightbox slides: slide 1 is the certificate (with the PDF
+ * download link), slides 2–16 are the OJT photos from /public/OJT/ in
+ * alphabetical order. Counts stay in sync with the directory contents.
+ */
+const panasonicGallery: GallerySlide[] = [
+  {
+    src: "/OJT/HOGAT_Certificate_of_Completion.jpg",
+    alt: "Panasonic OJT certificate",
+    kind: "certificate",
+    downloadHref: "/OJT/HOGAT_Certificate%20of%20Completion.pdf",
+    downloadLabel: "Download certificate (PDF)",
+  },
+  ...(
+    [
+      "/OJT/454102461_402982362398456_192437193789772941_n.jpg",
+      "/OJT/454135641_1053798906392110_6821122661150148282_n.jpg",
+      "/OJT/454157936_1164299364852596_7493137931355750325_n.jpg",
+      "/OJT/454528576_8063089013779060_7035260233287176221_n.jpg",
+      "/OJT/454565572_411455315285690_8220158487515809599_n.jpg",
+      "/OJT/454729955_299291233240062_2589192384814432939_n.jpg",
+      "/OJT/454766603_358752807284091_3295279011766645882_n.jpg",
+      "/OJT/455041605_2004107010027633_2617410747665496318_n.jpg",
+      "/OJT/455220579_1176716653609970_1362072165878438740_n.jpg",
+      "/OJT/455220579_521757506914060_8823999513616049656_n.jpg",
+      "/OJT/455258315_558207476529619_3499394975778472234_n.jpg",
+      "/OJT/455679107_1195252021792408_2019190081481320645_n.jpg",
+      "/OJT/456147812_509816718308933_942520143934450851_n.jpg",
+      "/OJT/456414584_449409444743259_2395867398586450026_n.jpg",
+      "/OJT/456563982_523693420313367_8639871471467783190_n.jpg",
+    ] as const
+  ).map((src, i) => ({
+    src,
+    alt: `OJT photo ${i + 2} of 16`,
+    kind: "photo" as const,
+  })),
 ];
 
 export const experience: ExperienceItem[] = [
@@ -193,10 +213,7 @@ export const experience: ExperienceItem[] = [
       alt: "Certificate of Completion, Technical Support Engineer Internship, Panasonic Manufacturing Philippines Corp.",
       caption: "Certificate of Completion (Aug to Oct 2024)",
     },
-    gallery: panasonicOjtPhotos.map((src, i) => ({
-      src,
-      alt: `Internship photo ${i + 1} of ${panasonicOjtPhotos.length}`,
-    })),
+    gallerySlides: panasonicGallery,
   },
   {
     role: "SPES Scholar — Tourism Department",
