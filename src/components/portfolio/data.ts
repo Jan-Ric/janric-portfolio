@@ -1,3 +1,5 @@
+import type { GallerySlide } from "./ImageGalleryDialog";
+
 type ProjectImage = {
   src: string;
   alt: string;
@@ -28,8 +30,6 @@ type NotSoCalledProject = {
   stack: string[];
   link: string;
 };
-
-import type { GallerySlide } from "./ImageGalleryDialog";
 
 type ExperienceCover = {
   src: string;
