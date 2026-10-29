@@ -1,4 +1,5 @@
 import type { GallerySlide } from "./ImageGalleryDialog";
+import { ImageGalleryDialog } from "./ImageGalleryDialog";
 import { SectionHeading } from "./SectionHeading";
 import { experience, type ExperienceItem } from "./data";
 import { Briefcase, ZoomIn } from "lucide-react";
@@ -45,9 +46,6 @@ function ExperienceCoverDialog({ item }: { item: ExperienceItem }) {
     />
   );
 }
-
-// Imported below the local components only for readability of the file top.
-import { ImageGalleryDialog } from "./ImageGalleryDialog";
 
 function ExperienceCard({ item }: { item: ExperienceItem }) {
   return (

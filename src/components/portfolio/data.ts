@@ -29,15 +29,12 @@ type NotSoCalledProject = {
   link: string;
 };
 
+import type { GallerySlide } from "./ImageGalleryDialog";
+
 type ExperienceCover = {
   src: string;
   alt: string;
   caption: string;
-};
-
-type ExperienceGalleryImage = {
-  src: string;
-  alt: string;
 };
 
 export type ExperienceItem = {
@@ -46,7 +43,7 @@ export type ExperienceItem = {
   period: string;
   points: string[];
   cover?: ExperienceCover;
-  gallery?: ExperienceGalleryImage[];
+  gallerySlides?: GallerySlide[];
 };
 
 export const featuredProjects: FeaturedProject[] = [
