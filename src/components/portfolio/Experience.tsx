@@ -56,7 +56,6 @@ function ExperienceCoverDialog({ item }: { item: ExperienceItem }) {
     />
   );
 }
-}
 
 function ExperienceCard({ item }: { item: ExperienceItem }) {
   return (
