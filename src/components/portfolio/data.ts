@@ -35,8 +35,14 @@ type ExperienceCover = {
   src: string;
   alt: string;
   caption: string;
-  /** Accessible label for the clickable photo area; falls back to alt. */
+  /** Accessible label for the clickable cover area; falls back to the cover alt. */
   ariaLabel?: string;
+  /** Lightbox header title; falls back to "<org> — OJT certificate & photos". */
+  dialogTitle?: string;
+  /** Base zoom of the cover image (certificate covers default to 1.4). */
+  baseScale?: number;
+  /** Hover zoom of the cover image (defaults to baseScale + 0.05). */
+  hoverScale?: number;
 };
 
 export type ExperienceItem = {
@@ -46,9 +52,7 @@ export type ExperienceItem = {
   points: string[];
   cover?: ExperienceCover;
   gallerySlides?: GallerySlide[];
-  /** Optional secondary photo block rendered below the bullets (e.g. SPES team photo). */
-  photo?: ExperienceCover;
-  /** Optional outbound link rendered under the photo caption. */
+  /** Optional outbound link rendered below the bullets. */
   link?: { href: string; label: string; ariaLabel: string };
 };
 
@@ -229,16 +233,20 @@ export const experience: ExperienceItem[] = [
       "Participated in mapping the potential tourist spots across the locality.",
       "Classified locations by accessibility, ownership, facilities, and visitor stats in Excel.",
     ],
-    photo: {
-      src: "/SPES-pic.jpg",
-      alt: "SPES Scholar team at the Pilila Tourism Department",
-      caption: "Tourism Department team, Pilila, Rizal (Aug 2022)",
-      ariaLabel: "View Tourism Department team photo",
+    photo: undefined,
+    cover: {
+      src: "/Tourism-Project-Page.jpg",
+      alt: "Tourism mapping project Facebook page",
+      caption: "Tourism Mapping Project Page (Facebook), Pilila, Rizal",
+      ariaLabel: "View tourism mapping project page",
+      dialogTitle: "Tourism mapping project page (Facebook)",
+      baseScale: 1,
+      hoverScale: 1.05,
     },
     gallerySlides: [
       {
-        src: "/SPES-pic.jpg",
-        alt: "SPES Scholar team at the Pilila Tourism Department",
+        src: "/Tourism-Project-Page.jpg",
+        alt: "Tourism mapping project Facebook page",
         kind: "photo",
       },
     ],
