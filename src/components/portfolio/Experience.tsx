@@ -56,45 +56,6 @@ function ExperienceCoverDialog({ item }: { item: ExperienceItem }) {
     />
   );
 }
-
-/**
- * Secondary photo block below the bullet points (e.g. the SPES team photo).
- * The whole area is one real <button> that opens the gallery lightbox with
- * this single image (object-fit: contain).
- */
-function ExperiencePhotoDialog({ item }: { item: ExperienceItem }) {
-  const photo = item.photo;
-  if (!photo) return null;
-
-  return (
-    <ImageGalleryDialog
-      slides={item.gallerySlides ?? []}
-      title={`${item.org} — team photo`}
-      trigger={
-        <button
-          type="button"
-          className={`group block w-full cursor-pointer overflow-hidden bg-card ${focusRing}`}
-          aria-label={photo.ariaLabel ?? photo.alt}
-        >
-          <span className="relative block aspect-[4/3] w-full overflow-hidden">
-            <img
-              src={photo.src}
-              alt={photo.alt}
-              width={1200}
-              height={900}
-              loading="lazy"
-              decoding="async"
-              className="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.05]"
-            />
-            <span className="pointer-events-none absolute inset-0 flex items-center justify-center gap-2 bg-background/60 opacity-0 motion-safe:transition-opacity motion-safe:duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
-              <ZoomIn className="size-5" aria-hidden />
-              <span className="font-mono text-xs text-foreground">Click to view</span>
-            </span>
-          </span>
-        </button>
-      }
-    />
-  );
 }
 
 function ExperienceCard({ item }: { item: ExperienceItem }) {
