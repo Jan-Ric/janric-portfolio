@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import type { GallerySlide } from "./ImageGalleryDialog";
 import { ImageGalleryDialog } from "./ImageGalleryDialog";
 import { SectionHeading } from "./SectionHeading";
