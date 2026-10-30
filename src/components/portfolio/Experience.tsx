@@ -92,28 +92,6 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
           ))}
         </ul>
       </div>
-      {item.photo ? (
-        <div className="mt-auto border-t border-border">
-          <ExperiencePhotoDialog item={item} />
-          <p className="px-6 pt-3 font-mono text-xs text-muted-foreground">
-            {item.photo.caption}
-          </p>
-          {item.link ? (
-            <div className="px-6 pb-6 pt-3">
-              <a
-                href={item.link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={item.link.ariaLabel}
-                className={`inline-flex items-center gap-1.5 rounded border border-border px-3 py-1.5 font-mono text-xs text-foreground transition-colors hover:border-[color:var(--primary)] hover:text-[color:var(--primary)] ${focusRing}`}
-              >
-                <ExternalLink className="size-3.5 shrink-0" aria-hidden />
-                {item.link.label}
-              </a>
-            </div>
-          ) : null}
-        </div>
-      ) : null}
     </article>
   );
 }
