@@ -50,6 +50,7 @@ export function ImageGalleryDialog({
   description,
   trigger,
 }: ImageGalleryDialogProps) {
+  const isSingle = slides.length <= 1;
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const [api, setApi] = useState<CarouselApi>();
@@ -110,15 +111,17 @@ export function ImageGalleryDialog({
           <DialogTitle className="font-mono text-sm">{title}</DialogTitle>
           <DialogDescription className="font-mono text-xs">
             {description ??
-              (slides[index]
-                ? `Slide ${index + 1} of ${slides.length} · ${slides[index].alt}`
-                : `${slides.length} slides`)}
+              (isSingle
+                ? (slides[0]?.alt ?? "")
+                : slides[index]
+                  ? `Slide ${index + 1} of ${slides.length} · ${slides[index].alt}`
+                  : `${slides.length} slides`)}
           </DialogDescription>
         </DialogHeader>
 
         <Carousel
           setApi={setApi}
-          opts={{ loop: true }}
+          opts={{ loop: !isSingle }}
           className="min-h-0 flex-1"
           aria-label={title}
         >
