@@ -91,6 +91,20 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
             </li>
           ))}
         </ul>
+        {item.link ? (
+          <div className="mt-5">
+            <a
+              href={item.link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={item.link.ariaLabel}
+              className={`inline-flex items-center gap-1.5 rounded border border-border px-3 py-1.5 font-mono text-xs text-foreground transition-colors hover:border-[color:var(--primary)] hover:text-[color:var(--primary)] ${focusRing}`}
+            >
+              <ExternalLink className="size-3.5 shrink-0" aria-hidden />
+              {item.link.label}
+            </a>
+          </div>
+        ) : null}
       </div>
     </article>
   );
