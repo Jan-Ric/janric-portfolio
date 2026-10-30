@@ -35,6 +35,8 @@ type ExperienceCover = {
   src: string;
   alt: string;
   caption: string;
+  /** Accessible label for the clickable photo area; falls back to alt. */
+  ariaLabel?: string;
 };
 
 export type ExperienceItem = {
@@ -44,6 +46,10 @@ export type ExperienceItem = {
   points: string[];
   cover?: ExperienceCover;
   gallerySlides?: GallerySlide[];
+  /** Optional secondary photo block rendered below the bullets (e.g. SPES team photo). */
+  photo?: ExperienceCover;
+  /** Optional outbound link rendered under the photo caption. */
+  link?: { href: string; label: string; ariaLabel: string };
 };
 
 export const featuredProjects: FeaturedProject[] = [
@@ -223,6 +229,24 @@ export const experience: ExperienceItem[] = [
       "Participated in mapping the potential tourist spots across the locality.",
       "Classified locations by accessibility, ownership, facilities, and visitor stats in Excel.",
     ],
+    photo: {
+      src: "/SPES-pic.jpg",
+      alt: "SPES Scholar team at the Pilila Tourism Department",
+      caption: "Tourism Department team, Pilila, Rizal (Aug 2022)",
+      ariaLabel: "View Tourism Department team photo",
+    },
+    gallerySlides: [
+      {
+        src: "/SPES-pic.jpg",
+        alt: "SPES Scholar team at the Pilila Tourism Department",
+        kind: "photo",
+      },
+    ],
+    link: {
+      href: "https://www.facebook.com/HistorismoPilillanon",
+      label: "View tourism mapping project (Facebook)",
+      ariaLabel: "Opens the tourism mapping project Facebook page in a new tab",
+    },
   },
 ];
 
