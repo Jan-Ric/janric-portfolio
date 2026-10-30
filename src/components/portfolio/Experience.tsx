@@ -9,14 +9,19 @@ const focusRing =
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--primary)]";
 
 /**
- * Certificate media area at the top of the card. The image fills the area
- * edge to edge (object-cover, zoomed onto the certificate text block) and the
- * whole area is one real <button> that opens the certificate + photo gallery
- * lightbox (Radix Dialog focus trap, Esc/backdrop close, focus return).
+ * Media area at the top of the card. The image fills the area edge to edge
+ * (object-cover, zoomed per cover.baseScale/hoverScale — the Panasonic
+ * certificate zooms onto its text block, page screenshots stay at 1×) and the
+ * whole area is one real <button> that opens the gallery lightbox (Radix
+ * Dialog focus trap, Esc/backdrop close, focus return).
  */
 function ExperienceCoverDialog({ item }: { item: ExperienceItem }) {
   const cover = item.cover;
   if (!cover) return null;
+
+  const baseScale = cover.baseScale ?? 1.4;
+  const hoverScale = cover.hoverScale ?? baseScale + 0.05;
+
 
   return (
     <ImageGalleryDialog
