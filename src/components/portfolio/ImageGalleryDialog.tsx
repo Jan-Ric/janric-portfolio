@@ -227,7 +227,8 @@ export function ImageGalleryDialog({
               </button>
             ))}
           </div>
-        </div>
+          </div>
+        )}
       </DialogContent>
     </Dialog>
   );
