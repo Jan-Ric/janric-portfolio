@@ -26,21 +26,25 @@ function ExperienceCoverDialog({ item }: { item: ExperienceItem }) {
   return (
     <ImageGalleryDialog
       slides={item.gallerySlides ?? []}
-      title={`${item.org} — OJT certificate & photos`}
+      title={cover.dialogTitle ?? `${item.org} — OJT certificate & photos`}
       trigger={
         <button
           type="button"
           className={`group block w-full cursor-pointer overflow-hidden rounded-t-lg border-b border-border bg-card ${focusRing}`}
-          aria-label="Open OJT certificate and photo gallery"
+          aria-label={cover.ariaLabel ?? "Open OJT certificate and photo gallery"}
         >
-          <span className="relative block aspect-[4/3] w-full overflow-hidden">
+          <span
+            className="relative block aspect-[4/3] w-full overflow-hidden"
+            style={{ "--cover-base": baseScale, "--cover-hover": hoverScale } as CSSProperties}
+          >
             <img
               src={cover.src}
               alt={cover.alt}
               width={800}
               height={600}
+              loading="lazy"
               decoding="async"
-              className="h-full w-full scale-[1.4] object-cover object-[center_40%] motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-[1.45]"
+              className="h-full w-full scale-(--cover-base) object-cover object-[center_40%] motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-(--cover-hover)"
             />
             <span className="pointer-events-none absolute inset-0 flex items-center justify-center gap-2 bg-background/60 opacity-0 motion-safe:transition-opacity motion-safe:duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
               <ZoomIn className="size-5" aria-hidden />
