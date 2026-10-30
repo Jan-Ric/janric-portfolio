@@ -150,9 +150,11 @@ export function ImageGalleryDialog({
                     )}
                   </div>
                   <div className="flex items-center justify-between gap-4 py-3">
-                    <span className="font-mono text-xs text-muted-foreground">
-                      {i + 1} / {slides.length}
-                    </span>
+                    {!isSingle && (
+                      <span className="font-mono text-xs text-muted-foreground">
+                        {i + 1} / {slides.length}
+                      </span>
+                    )}
                     {slide.downloadHref ? (
                       <a
                         href={slide.downloadHref}
@@ -172,25 +174,30 @@ export function ImageGalleryDialog({
             ))}
           </CarouselContent>
 
-          <button
-            type="button"
-            onClick={() => api?.scrollPrev()}
-            aria-label="Previous slide"
-            className={`absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-md border border-border bg-background/80 p-2 text-foreground transition-colors hover:border-[color:var(--primary)] hover:text-[color:var(--primary)] ${focusRing}`}
-          >
-            <ChevronLeft className="size-4" />
-          </button>
-          <button
-            type="button"
-            onClick={() => api?.scrollNext()}
-            aria-label="Next slide"
-            className={`absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-md border border-border bg-background/80 p-2 text-foreground transition-colors hover:border-[color:var(--primary)] hover:text-[color:var(--primary)] ${focusRing}`}
-          >
-            <ChevronRight className="size-4" />
-          </button>
+          {!isSingle && (
+            <>
+              <button
+                type="button"
+                onClick={() => api?.scrollPrev()}
+                aria-label="Previous slide"
+                className={`absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-md border border-border bg-background/80 p-2 text-foreground transition-colors hover:border-[color:var(--primary)] hover:text-[color:var(--primary)] ${focusRing}`}
+              >
+                <ChevronLeft className="size-4" />
+              </button>
+              <button
+                type="button"
+                onClick={() => api?.scrollNext()}
+                aria-label="Next slide"
+                className={`absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-md border border-border bg-background/80 p-2 text-foreground transition-colors hover:border-[color:var(--primary)] hover:text-[color:var(--primary)] ${focusRing}`}
+              >
+                <ChevronRight className="size-4" />
+              </button>
+            </>
+          )}
         </Carousel>
 
-        <div className="border-t border-border p-2">
+        {!isSingle && (
+          <div className="border-t border-border p-2">
           <div className="flex gap-2 overflow-x-auto pb-1">
             {slides.map((slide, i) => (
               <button
