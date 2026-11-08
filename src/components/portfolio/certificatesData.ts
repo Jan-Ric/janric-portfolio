@@ -16,7 +16,6 @@ export interface LicenseCertificate {
   alt: string;
   width: number;
   height: number;
-  meta?: string;
 }
 
 /** Uploaded PRC and workplace-safety credentials. */
@@ -27,7 +26,6 @@ export const licenseCertificates: LicenseCertificate[] = [
     alt: "Elex Engineer PRC license verification details",
     width: 597,
     height: 602,
-    meta: "GWA 85",
   },
   {
     label: "Licensed Electronics Technician (ECT)",
@@ -35,7 +33,6 @@ export const licenseCertificates: LicenseCertificate[] = [
     alt: "Elex Technician PRC license verification details",
     width: 595,
     height: 480,
-    meta: "GWA 80",
   },
   {
     label: "Basic Occupational Safety and Health for Safety Officer 2",
@@ -43,7 +40,6 @@ export const licenseCertificates: LicenseCertificate[] = [
     alt: "Basic Occupational Safety and Health for Safety Officer 2 certificate",
     width: 1920,
     height: 1385,
-    meta: "DOLE-accredited · Ref B20426-026",
   },
 ];
 

@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import { useState } from "react";
+import { useState, type PointerEvent } from "react";
 import {
   Dialog,
   DialogContent,
@@ -72,7 +72,7 @@ export function LicenseCertificateDialog({ cert }: { cert: LicenseCertificate })
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
 
-  function updatePreviewPosition(event: React.PointerEvent<HTMLButtonElement>) {
+  function updatePreviewPosition(event: PointerEvent<HTMLButtonElement>) {
     if (event.pointerType !== "mouse") return;
 
     const previewWidth = 232;

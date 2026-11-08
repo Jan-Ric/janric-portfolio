@@ -13,20 +13,11 @@ export function Certifications() {
 
         <div className="grid gap-8 md:grid-cols-3">
           <ul className="space-y-5 md:col-span-2">
-            {licenseCertificates.map((cert) => {
-              const meta = [...certifications.prc, ...certifications.safety].find(
-                (entry) => entry.label === cert.label,
-              )?.meta;
-
-              return (
-                <li key={cert.label} className="space-y-1">
-                  <LicenseCertificateDialog cert={cert} />
-                  {meta ? (
-                    <p className="font-mono text-xs text-muted-foreground">{meta}</p>
-                  ) : null}
-                </li>
-              );
-            })}
+            {licenseCertificates.map((cert) => (
+              <li key={cert.label}>
+                <LicenseCertificateDialog cert={cert} />
+              </li>
+            ))}
           </ul>
 
           <div className="card-hover rounded-lg border border-border bg-card p-5">
