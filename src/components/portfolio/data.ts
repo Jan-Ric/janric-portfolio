@@ -79,7 +79,7 @@ export const featuredProjects: FeaturedProject[] = [
       "ISO-based audit with a decade-long demand forecast. Modeled LED retrofits and phantom-load elimination to cut projected costs.",
     stack: ["Energy Audit", "Forecasting", "Excel", "Python"],
     impact: "Projected energy cost reduction\u00a0",
-    link: "https://github.com/Jan-Ric/Research-and-Projects/blob/main/Energy-Audit",
+    link: "https://github.com/Jan-Ric/Research-and-Projects/tree/main/Energy-Audit_Lower-Bicutan",
     image: {
       src: "/Energy-Audit-Page.jpg",
       alt: "ISO-Based Energy Audit & 10-Year Demand Forecasting for Barangay Lower Bicutan project page screenshot",
