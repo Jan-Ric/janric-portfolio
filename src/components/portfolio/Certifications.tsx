@@ -1,5 +1,4 @@
 import { SectionHeading } from "./SectionHeading";
-import { certifications } from "./data";
 import { datacampCertificates, licenseCertificates } from "./certificatesData";
 import { CertificateDialog, LicenseCertificateDialog } from "./CertificateModal";
 
