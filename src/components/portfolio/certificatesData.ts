@@ -10,6 +10,43 @@ export interface CertificateFile {
   credentialUrl?: string;
 }
 
+export interface LicenseCertificate {
+  label: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  meta?: string;
+}
+
+/** Uploaded PRC and workplace-safety credentials. */
+export const licenseCertificates: LicenseCertificate[] = [
+  {
+    label: "Licensed Electronics Engineer (ECE)",
+    src: encodeURI("/certificates/Elex Engineer - PRC.png"),
+    alt: "Elex Engineer PRC license verification details",
+    width: 597,
+    height: 602,
+    meta: "GWA 85",
+  },
+  {
+    label: "Licensed Electronics Technician (ECT)",
+    src: encodeURI("/certificates/Elex Technician - PRC.png"),
+    alt: "Elex Technician PRC license verification details",
+    width: 595,
+    height: 480,
+    meta: "GWA 80",
+  },
+  {
+    label: "Basic Occupational Safety and Health for Safety Officer 2",
+    src: "/certificates/Hogat_BOSH-SO2.png",
+    alt: "Basic Occupational Safety and Health for Safety Officer 2 certificate",
+    width: 1920,
+    height: 1385,
+    meta: "DOLE-accredited · Ref B20426-026",
+  },
+];
+
 /**
  * DataCamp certificate entries backed by files in /public/certificates/.
  * Adding a certificate = adding one entry here (and dropping the file in
