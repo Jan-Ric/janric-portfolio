@@ -1,7 +1,8 @@
 import { SectionHeading } from "./SectionHeading";
 import { certifications } from "./data";
-import { datacampCertificates } from "./certificatesData";
+import { datacampCertificates, licenseCertificates } from "./certificatesData";
 import { CertificateDialog } from "./CertificateModal";
+import { LicenseCertificateLink } from "./LicenseCertificateLink";
 import { BadgeCheck, ShieldCheck } from "lucide-react";
 
 export function Certifications() {
@@ -16,30 +17,44 @@ export function Certifications() {
           <div className="card-hover rounded-lg border border-border bg-card p-5">
             <p className="font-mono text-xs text-[color:var(--primary)]">PRC BOARD{"\u00a0"}</p>
             <ul className="mt-3 space-y-3">
-              {certifications.prc.map((c) => (
-                <li key={c.label} className="flex items-start gap-2 text-sm">
-                  <BadgeCheck className="mt-0.5 size-4 shrink-0 text-[color:var(--primary)]" />
-                  <div>
-                    <p className="font-medium">{c.label}</p>
-                    <p className="font-mono text-xs text-muted-foreground">{c.meta}</p>
-                  </div>
-                </li>
-              ))}
+              {certifications.prc.map((c) => {
+                const certificate = licenseCertificates.find((item) => item.label === c.label);
+                return (
+                  <li key={c.label} className="flex items-start gap-2 text-sm">
+                    <BadgeCheck className="mt-0.5 size-4 shrink-0 text-[color:var(--primary)]" />
+                    <div>
+                      {certificate ? (
+                        <LicenseCertificateLink certificate={certificate} />
+                      ) : (
+                        <p className="font-medium">{c.label}</p>
+                      )}
+                      <p className="font-mono text-xs text-muted-foreground">{c.meta}</p>
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           <div className="card-hover rounded-lg border border-border bg-card p-5">
             <p className="font-mono text-xs text-[color:var(--primary)]">SAFETY</p>
             <ul className="mt-3 space-y-3">
-              {certifications.safety.map((c) => (
-                <li key={c.label} className="flex items-start gap-2 text-sm">
-                  <ShieldCheck className="mt-0.5 size-4 shrink-0 text-[color:var(--success)]" />
-                  <div>
-                    <p className="font-medium">{c.label}</p>
-                    <p className="font-mono text-xs text-muted-foreground">{c.meta}</p>
-                  </div>
-                </li>
-              ))}
+              {certifications.safety.map((c) => {
+                const certificate = licenseCertificates.find((item) => item.label === c.label);
+                return (
+                  <li key={c.label} className="flex items-start gap-2 text-sm">
+                    <ShieldCheck className="mt-0.5 size-4 shrink-0 text-[color:var(--success)]" />
+                    <div>
+                      {certificate ? (
+                        <LicenseCertificateLink certificate={certificate} />
+                      ) : (
+                        <p className="font-medium">{c.label}</p>
+                      )}
+                      <p className="font-mono text-xs text-muted-foreground">{c.meta}</p>
+                    </div>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
