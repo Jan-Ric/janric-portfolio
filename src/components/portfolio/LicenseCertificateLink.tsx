@@ -17,14 +17,15 @@ export function LicenseCertificateLink({
 }: {
   certificate: LicenseCertificate;
 }) {
-  const [previewEnabled, setPreviewEnabled] = useState(false);
+  const [supportsHoverPreview, setSupportsHoverPreview] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
   const [previewPosition, setPreviewPosition] = useState({ x: 0, y: 0 });
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
-    const update = () => setPreviewEnabled(mediaQuery.matches);
+    const update = () => setSupportsHoverPreview(mediaQuery.matches);
     update();
     mediaQuery.addEventListener("change", update);
     return () => mediaQuery.removeEventListener("change", update);
@@ -37,11 +38,15 @@ export function LicenseCertificateLink({
           type="button"
           variant="ghost"
           className={`h-auto justify-start rounded-none p-0 text-left text-sm font-medium text-foreground hover:bg-transparent hover:text-foreground hover:underline ${focusRing}`}
-          onMouseEnter={() => previewEnabled && setPreviewEnabled(true)}
-          onMouseLeave={() => setPreviewEnabled(false)}
+          onMouseEnter={() => supportsHoverPreview && setShowPreview(true)}
+          onMouseLeave={() => setShowPreview(false)}
+          onFocus={() => setShowPreview(false)}
           onMouseMove={(event) => {
-            if (previewEnabled) {
-              setPreviewPosition({ x: event.clientX + 18, y: event.clientY + 18 });
+            if (supportsHoverPreview) {
+              setPreviewPosition({
+                x: Math.min(event.clientX + 18, window.innerWidth - 210),
+                y: Math.min(event.clientY + 18, window.innerHeight - 180),
+              });
             }
           }}
         >
@@ -49,13 +54,13 @@ export function LicenseCertificateLink({
         </Button>
       </DialogTrigger>
 
-      {previewEnabled && (
+      {supportsHoverPreview && (
         <div
           aria-hidden="true"
-          className="pointer-events-none fixed z-40 hidden w-48 overflow-hidden rounded border border-border bg-card p-1 opacity-0 transition-opacity duration-200 group-hover:opacity-100 motion-reduce:transition-none [@media(hover:hover)_and_(pointer:fine)]:block"
+          className={`pointer-events-none fixed z-40 hidden w-48 overflow-hidden rounded border border-border bg-card p-1 transition-opacity duration-150 motion-reduce:transition-none [@media(hover:hover)_and_(pointer:fine)]:block ${showPreview ? "opacity-100" : "opacity-0"}`}
           style={{ left: previewPosition.x, top: previewPosition.y }}
         >
-          <img src={certificate.src} alt="" className="block h-auto w-full" />
+          <img src={certificate.src} alt="" loading="lazy" className="block h-auto w-full" />
         </div>
       )}
 
