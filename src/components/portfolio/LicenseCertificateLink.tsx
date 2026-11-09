@@ -37,7 +37,7 @@ export function LicenseCertificateLink({
         <Button
           type="button"
           variant="ghost"
-          className={`h-auto justify-start rounded-none p-0 text-left text-sm font-medium text-foreground hover:bg-transparent hover:text-foreground hover:underline ${focusRing}`}
+          className={`h-auto justify-start rounded-none p-0 text-left text-sm font-medium whitespace-normal text-foreground hover:bg-transparent hover:text-foreground hover:underline ${focusRing}`}
           onMouseEnter={() => supportsHoverPreview && setShowPreview(true)}
           onMouseLeave={() => setShowPreview(false)}
           onFocus={() => setShowPreview(false)}
