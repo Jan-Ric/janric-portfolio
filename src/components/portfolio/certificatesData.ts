@@ -69,3 +69,27 @@ export const datacampCertificates: Array<
     fileType: "image",
   },
 ];
+
+export type LicenseCertificate = {
+  label: string;
+  src: string;
+  alt: string;
+};
+
+export const licenseCertificates: LicenseCertificate[] = [
+  {
+    label: "Licensed Electronics Engineer (ECE)",
+    src: encodeURI("/certificates/Elex Engineer - PRC.png"),
+    alt: "Licensed Electronics Engineer certificate issued by the PRC",
+  },
+  {
+    label: "Licensed Electronics Technician (ECT)",
+    src: encodeURI("/certificates/Elex Technician - PRC.png"),
+    alt: "Licensed Electronics Technician certificate issued by the PRC",
+  },
+  {
+    label: "Basic Occupational Safety and Health for Safety Officer 2",
+    src: encodeURI("/certificates/Hogat_BOSH-SO2.png"),
+    alt: "Basic Occupational Safety and Health for Safety Officer 2 certificate",
+  },
+];
