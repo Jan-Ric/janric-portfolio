@@ -2,30 +2,39 @@ import { SectionHeading } from "./SectionHeading";
 import { Code2, Cpu, Database } from "lucide-react";
 
 const skillGroups: Array<{
-  label: string;
+  category: string;
   icon: typeof Cpu;
-  items: string[];
+  skills: string[];
+  subgroups?: Array<{ label: string; skills: string[] }>;
 }> = [
   {
-    label: "Hardware & Technical Support",
+    category: "Hardware & Technical Support",
     icon: Cpu,
-    items: [
-      "Basic PSU Blocks",
-      "Switch-Mode Power Supply",
-      "IC/Component Testing",
-      "PCB Troubleshooting",
-      "THT/SMD Rework",
-      "Circuit and Schematic Analysis",
-      "Root-Cause Analysis",
-      "Service Manual Interpretation",
-      "Technical Documentation",
-      "Dealer Training",
+    skills: [],
+    subgroups: [
+      {
+        label: "Power & Components",
+        skills: ["Basic PSU Blocks", "Switch-Mode Power Supply", "IC/Component Testing"],
+      },
+      {
+        label: "Repair & Diagnostics",
+        skills: [
+          "PCB Troubleshooting",
+          "THT/SMD Rework",
+          "Circuit and Schematic Analysis",
+          "Root-Cause Analysis",
+        ],
+      },
+      {
+        label: "Documentation & Training",
+        skills: ["Service Manual Interpretation", "Technical Documentation", "Dealer Training"],
+      },
     ],
   },
   {
-    label: "Embedded Systems & IoT",
+    category: "Embedded Systems & IoT",
     icon: Code2,
-    items: [
+    skills: [
       "Microcontrollers/Microprocessors (Arduino, Raspberry Pi)",
       "Sensor and System Integration",
       "IoT System Concepts",
@@ -33,49 +42,70 @@ const skillGroups: Array<{
     ],
   },
   {
-    label: "Software, Data and Cloud",
+    category: "Software, Data and Cloud",
     icon: Database,
-    items: [
-      "Python (Pandas/NumPy)",
-      "C++",
-      "SQL",
-      "PostgreSQL",
-      "Firebase",
-      "AWS",
-      "Docker",
-      "Git",
-      "End-to-End Data Lifecycle",
-      "Excel",
-      "Dashboards and Reporting",
+    skills: [],
+    subgroups: [
+      {
+        label: "Languages & Databases",
+        skills: ["Python (Pandas/NumPy)", "C++", "SQL", "PostgreSQL"],
+      },
+      {
+        label: "Cloud & Tooling",
+        skills: ["Firebase", "AWS", "Docker", "Git"],
+      },
+      {
+        label: "Data & Reporting",
+        skills: ["End-to-End Data Lifecycle", "Excel", "Dashboards and Reporting"],
+      },
     ],
   },
 ];
 
 function GroupCard({
-  label,
+  category,
   icon: Icon,
-  items,
+  skills,
+  subgroups,
 }: {
-  label: string;
+  category: string;
   icon: typeof Cpu;
-  items: string[];
+  skills: string[];
+  subgroups?: Array<{ label: string; skills: string[] }>;
 }) {
+  const renderSkills = (items: string[]) => (
+    <div className="flex flex-wrap gap-1.5">
+      {items.map((item) => (
+        <span
+          key={item}
+          className="min-w-0 whitespace-normal break-words rounded-md border border-border bg-secondary/40 px-2 py-1 font-mono text-[11px]"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+  );
+
   return (
-    <div className="card-hover rounded-lg border border-border bg-card p-5">
+    <div className="card-hover min-w-0 rounded-lg border border-border bg-card p-5">
       <div className="flex items-center gap-2">
         <Icon className="size-4 text-[color:var(--primary)]" />
-        <p className="font-mono text-xs text-[color:var(--primary)]">{label}</p>
+        <h3 className="font-mono text-xs text-[color:var(--primary)]">{category}</h3>
       </div>
-      <div className="mt-4 flex flex-wrap gap-1.5">
-        {items.map((it) => (
-          <span
-            key={it}
-            className="rounded-md border border-border bg-secondary/40 px-2 py-1 font-mono text-[11px]"
-          >
-            {it}
-          </span>
-        ))}
-      </div>
+      {subgroups ? (
+        <div className="mt-4 space-y-4">
+          {subgroups.map((subgroup) => (
+            <div key={subgroup.label}>
+              <p className="mb-2 font-mono text-[10px] uppercase text-muted-foreground">
+                {subgroup.label}
+              </p>
+              {renderSkills(subgroup.skills)}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="mt-4">{renderSkills(skills)}</div>
+      )}
     </div>
   );
 }
@@ -85,12 +115,12 @@ export function TechStack() {
     <section id="stack" className="border-b border-border">
       <div className="mx-auto max-w-6xl px-4 py-20">
         <SectionHeading eyebrow="stack" title="Tech Stacks & Languages">
-          Tools, Skills and languages I use across data engineering, analytics, and hardware-adjacent work.
+          Hardware troubleshooting, embedded systems, and data tools I use across electronics and data engineering work.
         </SectionHeading>
 
         <div className="grid gap-4 md:grid-cols-3">
-          {skillGroups.map((g) => (
-            <GroupCard key={g.label} {...g} />
+          {skillGroups.map((group) => (
+            <GroupCard key={group.category} {...group} />
           ))}
         </div>
       </div>
