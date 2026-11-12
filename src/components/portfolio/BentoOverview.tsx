@@ -40,10 +40,10 @@ export function BentoOverview() {
                 rel="noreferrer"
                 className="mt-2 block text-sm font-medium text-foreground hover:text-[color:var(--link)] hover:underline"
               >
-                Solar Power Plant Inverter Analysis: A 12-Month AC Output Quantification of Inverters with a Negative Gap Between Actual and Predictive Yield
+                Solar Power Plant Inverter Analysis: A 12-Month Hourly Performance Ratio Analysis of Simulated Inverters Against the Fleet Median
               </a>
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
-                Forecasts solar energy yield from inverter telemetry using a modern data engineering stack to optimize revenue and operations.{"\n\n\n"}Note: This project is still in development; changes and improvements and upgrades to features, data sources, data models and tools are not final.
+                Detects underperforming solar inverters from simulated hourly output using a Python and SQL pipeline with rule-based anomaly detection.{"\n\n\n\n\n"}Note: This project is still in development; changes and improvements and upgrades to features, data sources, data models and tools are not final.
               </p>
             </div>
             <div className="mt-4 flex flex-wrap gap-1.5 font-mono text-[11px]">
