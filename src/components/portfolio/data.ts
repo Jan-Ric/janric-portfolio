@@ -285,7 +285,7 @@ export const affiliations = [
     name: "IECEP",
     role: "Official member",
     period: "2021 – present",
-    note: "Official member since becoming a licensed Electronics Engineer (ECE) and Electronics Technician (ECT).",
+    note: "Associate member as an engineering student of the IECEP PUP-Manila Chapter, then Regular member upon becoming a licensed Electronics Engineer (ECE) and Electronics Technician (ECT).",
     link: "https://myiecep.net/",
   },
   {
