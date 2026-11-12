@@ -285,7 +285,7 @@ export const affiliations = [
     name: "IECEP",
     role: "Official member",
     period: "2021 – present",
-    note: "• Institute of Electronics Engineers of the Philippines.",
+    note: "Official member since becoming a licensed Electronics Engineer (ECE) and Electronics Technician (ECT).",
     link: "https://myiecep.net/",
   },
   {
